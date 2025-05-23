@@ -1,4 +1,3 @@
-// @ts-nocheck - Tạm thời bỏ qua kiểm tra TypeScript để workaround bug trong Next.js TypeScript template
 import { Metadata } from "next";
 import { generateSeoMetadata } from "@/lib/seo";
 import NewsDetail from "@/components/pages/news/NewsDetail";
@@ -9,7 +8,7 @@ import { NewsItem } from '@/hooks/useNewsFilters';
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const { slug } = params;
   const news = newsData.find(item => item.slug === slug);
-  
+
   if (!news) {
     return generateSeoMetadata({
       title: "Tin tức không tồn tại",

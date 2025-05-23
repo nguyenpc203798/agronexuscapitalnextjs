@@ -17,25 +17,21 @@ const HomeSlider = memo(() => {
   // Mảng chứa thông tin các slide
   const sliderImages = [
     {
-      src: '/images/slider/slide1.jpg',
-      alt: t('home.slider.slide1_alt') || 'Tantai Trading Slide 1'
+      src: '/images/pages/home/slider/slide1.jpg',
+      alt: t('home.slider.slide1_alt') || 'Agronexus Capital Slide 1'
     },
     {
-      src: '/images/slider/slide2.jpg',
-      alt: t('home.slider.slide2_alt') || 'Tantai Trading Slide 2'
+      src: '/images/pages/home/slider/slide2.jpg',
+      alt: t('home.slider.slide2_alt') || 'Agronexus Capital Slide 2'
     },
     {
-      src: '/images/slider/slide3.jpg',
-      alt: t('home.slider.slide3_alt') || 'Tantai Trading Slide 3'
+      src: '/images/pages/home/slider/slide3.jpg',
+      alt: t('home.slider.slide3_alt') || 'Agronexus Capital Slide 3'
     },
-    {
-      src: '/images/slider/slide4.jpg',
-      alt: t('home.slider.slide4_alt') || 'Tantai Trading Slide 4'
-    }
   ];
 
   return (
-    <div className="relative w-full h-[40vh] md:h-[100vh]">
+    <div className="relative w-full h-[40vh] md:h-[80vh]">
       <Swiper
         modules={[Pagination, EffectFade, Autoplay]}
         effect="fade"
@@ -65,7 +61,6 @@ const HomeSlider = memo(() => {
                 priority={index === 0}
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-black/30" />
             </div>
           </SwiperSlide>
         ))}
@@ -74,18 +69,21 @@ const HomeSlider = memo(() => {
       {/* Custom CSS cho pagination dọc bên phải */}
       <style jsx global>{`
         .swiper-pagination {
-          right: 20px !important;
-          left: auto !important;
+          position: absolute;
+          left: 95% !important;
+          top: 45% !important;
           display: flex;
           flex-direction: column;
           gap: 10px;
+          width: 20px !important;
         }
         
         .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background: rgba(255, 255, 255, 0.5);
-          opacity: 1;
+          width:13px;
+          height: 13px;
+          background: transparent;
+          border: 2px solid #fff;
+          box-shadow: 0 0 10px 0 #45454580;
         }
         
         .swiper-pagination-bullet-active {

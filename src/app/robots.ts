@@ -11,7 +11,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/admin/"],
     },
-    sitemap: "https://tantaitrading.com/sitemap.xml",
-    host: "https://tantaitrading.com",
+    sitemap: "https://agronexuscapital.com/sitemap.xml",
+    host: "https://agronexuscapital.com",
   };
 } 

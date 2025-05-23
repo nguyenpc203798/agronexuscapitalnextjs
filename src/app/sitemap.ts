@@ -5,7 +5,7 @@ import { MetadataRoute } from "next";
  * @see https://nextjs.org/docs/app/api-reference/file-conventions/metadata/sitemap
  */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tantaitrading.com";
+  const baseUrl = "https://agronexuscapital.com";
   
   // Danh sách tất cả các route trong trang web
   const routes = [

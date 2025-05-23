@@ -25,26 +25,29 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
     <nav className="hidden md:flex space-x-8">
       <Link
         href="/"
-        className={`font-semibold transition-colors ${isActive('/') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
+        className={`group relative font-semibold transition-colors ${isActive('/') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
       >
         {t("nav.home")}
+        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
       </Link>
       <Link
         href="/about"
-        className={`font-semibold transition-colors ${isActive('/about') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
+        className={`group relative font-semibold transition-colors ${isActive('/about') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
       >
         {t("nav.about")}
+        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
       </Link>
 
       <HoverDropdownMenu>
         <DropdownMenuTrigger
-          className={`font-semibold transition-colors flex items-center gap-2 focus:outline-none ${isProductActive() ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
+          className={`groupfont-semibold transition-colors flex items-center gap-2 focus:outline-none ${isProductActive() ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
         >
           <Link
             href="/category"
-            className={`w-full cursor-pointer ${isActive('/category') ? 'text-green-800' : ''}`}
+            className={`group relative font-semibold w-full cursor-pointer ${isActive('/category') ? 'text-green-800' : ''}`}
           >
             {t("nav.products")}
+            <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
           </Link>
           <ChevronDown className="h-4 w-4" />
         </DropdownMenuTrigger>
@@ -110,9 +113,10 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
 
       <Link
         href="/news"
-        className={`font-semibold transition-colors ${isActive('/news') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
+        className={`group relative font-semibold transition-colors ${isActive('/news') ? 'text-green-800' : 'text-foreground hover:text-green-800'}`}
       >
         {t("nav.news")}
+        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
       </Link>
     </nav>
   );
