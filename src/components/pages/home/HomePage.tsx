@@ -3,9 +3,11 @@
 import MainLayout from "@/layouts/MainLayout";
 import HomeSlider from "@/components/pages/home/HomeSlider";
 import AboutSection from "@/components/pages/home/AboutSection";
-import ProductsSection from "@/components/pages/home/ProductsSection";
-import WarehouseSection from "@/components/pages/home/WarehouseSection";
-import NewsSection from "@/components/pages/home/NewsSection";
+import VisionMissionSection from "@/components/pages/home/VisionMissionSection";
+import CoreValuesSection from "@/components/pages/home/CoreValuesSection";
+import GroupSizeSection from "@/components/pages/home/GroupSizeSection";
+import InvestmentFieldsSection from "@/components/pages/home/InvestmentFieldsSection";
+import IndustrySection from "@/components/pages/home/IndustrySection";
 
 const HomePage = () => {
   return (
@@ -16,16 +18,22 @@ const HomePage = () => {
       {/* About Section */}
       <AboutSection />
 
-      {/* Products Section */}
-      <ProductsSection />
+      {/* Vision Mission Section */}
+      <VisionMissionSection />
 
-      {/* Warehouse Section */}
-      <WarehouseSection />
+      {/* Core Values Section */}
+      <CoreValuesSection />
 
-      {/* News Section */}
-      <NewsSection />
+      {/* Group Size Section */}
+      <GroupSizeSection />
+
+      {/* Investment Fields Section */}
+      <InvestmentFieldsSection />
+
+      {/* Industry Detail Sections */}
+      <IndustrySection />
     </MainLayout>
   );
 };
 
-export default HomePage; 
+export default HomePage;

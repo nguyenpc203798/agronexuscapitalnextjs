@@ -26,7 +26,6 @@ LanguageTooltipText.displayName = "LanguageTooltipText";
 const LANGUAGES = [
   { code: "vi", label: "Tiếng Việt", short: "VI", flag: "🇻🇳" },
   { code: "en", label: "English", short: "EN", flag: "🇬🇧" },
-  { code: "zh", label: "中文", short: "ZH", flag: "🇨🇳" },
 ];
 
 // Component chính

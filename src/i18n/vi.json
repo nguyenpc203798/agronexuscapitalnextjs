@@ -17,55 +17,16 @@
   },
   "home": {
     "slider": {
-      "slide1_alt": "Cánh đồng cà phê Tấn Tài",
-      "slide2_alt": "Nhà máy Tấn Tài",
-      "slide3_alt": "Kho hàng Tấn Tài",
-      "slide4_alt": "Dịch vụ xuất khẩu Tấn Tài"
+      "slide1_alt": "Cánh đồng xanh agronexus capital",
+      "slide2_alt": "Cánh đồng lúa agronexus capital",
+      "slide3_alt": "Năng lượng gió agronexus capital"
     },
     "about_section": {
-      "title": "GIỚI THIỆU",
-      "main_description": "Tấn Tài là doanh nghiệp chuyên doanh trong lĩnh vực nông sản, đặc biệt là cà phê. Với kinh nghiệm dày dặn, chúng tôi kết nối chặt chẽ từ nhà nông, thương lái đến khách hàng trong và ngoài nước, cam kết mang đến những sản phẩm chất lượng cao và dịch vụ chuyên nghiệp.",
-      "secondary_description": "Với hơn một thập kỷ kinh nghiệm trong lĩnh vực nông sản, Tấn Tài không ngừng mở rộng quy mô và nâng cao chất lượng, tập trung vào thương mại nội địa, kinh doanh xuất khẩu, dịch vụ tổng kho với các sản phẩm chủ lực như cà phê, cao su, hạt điều. Đồng thời, chúng tôi đầu tư mạnh vào hệ thống kho bãi và logistics hiện đại, sẵn sàng phục vụ khách hàng.",
-      "image1_alt": "Giỏ quả cà phê chín đỏ được cầm bởi người mặc áo sọc ca rô với lá cà phê xanh",
-      "image2_alt": "Nông dân thu hoạch cây cà phê ở vùng đồi núi xanh mặc áo khoác vàng và xanh",
-      "growth_strategies": {
-        "export_growth": {
-          "title": "Tăng trưởng kinh doanh xuất khẩu",
-          "items": [
-            "Mở rộng danh mục sản phẩm.",
-            "Tăng cường xúc tiến thương mại quốc tế."
-          ]
-        },
-        "warehouse_investment": {
-          "title": "Đầu tư tổng kho & sơ chế",
-          "items": [
-            "Nâng cao năng lực thu mua vùng nguyên liệu.",
-            "Đầu tư hệ thống tổng kho nông sản thông minh và sơ chế hiện đại."
-          ]
-        },
-        "warehouse_service": {
-          "title": "Phát triển dịch vụ tổng kho",
-          "items": [
-            "Dẫn đầu chuỗi thương mại, chế biến sâu, xuất khẩu.",
-            "Phát triển dịch vụ tổng kho quy mô toàn quốc."
-          ]
-        }
-      },
-      "stats": {
-        "revenue": "7,200",
-        "revenue_subtitle": "Tỷ đồng doanh thu năm 2024",
-        "tons": "66,000",
-        "tons_subtitle": "Tấn/ năm",
-        "bags": "1.1 triệu",
-        "bags_subtitle": "Bao/ Năm",
-        "experience": "30+ năm",
-        "experience_subtitle-top": "Kinh nghiệm sản xuất, thu mua",
-        "experience_subtitle-bottom": "& xuất khẩu nông sản quốc tế",
-        "factory_warehouse": "02",
-        "factory_warehouse_subtitle": "Kho / nhà máy",
-        "agricultural_services": "03",
-        "agricultural_services_subtitle": "Đề án đầu tư"
-      }
+      "title": "Về chúng tôi",
+      "main_description": "Tập Đoàn Đầu Tư Tiên Phong Phát Triển Xanh",
+      "second_description": "Tại Agronexus Capital, chúng tôi thúc đẩy sự kết nối và phát triển bền vững trong lĩnh vực nông nghiệp, năng lượng, khoáng sản...",
+      "third_description": "Với vai trò là cầu nối chiến lược giữa các doanh nghiệp có tư duy đổi mới và nhà đầu tư, Agronexus Capital cung cấp vốn, công nghệ và các nguồn lực cần thiết nhằm tối ưu hóa hiệu suất tăng trưởng và kiến tạo giá trị bền vững cho toàn bộ hệ sinh thái.",
+      "see_more": "Xem thêm"
     },
     "products_section": {
       "title": "CÁC NGÀNH HÀNG KINH DOANH CỦA TẤN TÀI",

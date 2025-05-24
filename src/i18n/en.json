@@ -23,49 +23,11 @@
       "slide4_alt": "Tantai Trading Export Services"
     },
     "about_section": {
-      "title": "ABOUT",
-      "main_description": "Tantai is a business specializing in agricultural products, especially coffee. With extensive experience, we connect closely from farmers, traders to domestic and international customers, committed to bringing high-quality products and professional services.",
-      "secondary_description": "With over a decade of experience in agricultural products, Tantai continuously expands its scale and improves quality, focusing on domestic trade, export business, and warehouse services with key products such as coffee, rubber, and cashew nuts. At the same time, we invest heavily in modern warehouse systems and logistics, ready to serve customers.",
-      "image1_alt": "Basket of red coffee cherries held by person wearing checkered shirt with green coffee leaves",
-      "image2_alt": "Farmers harvesting coffee plants in green hilly area wearing yellow and blue jackets",
-      "growth_strategies": {
-        "export_growth": {
-          "title": "Export Business Growth",
-          "items": [
-            "Expanding product portfolio.",
-            "Enhancing international trade promotion."
-          ]
-        },
-        "warehouse_investment": {
-          "title": "Warehouse & Processing Investment",
-          "items": [
-            "Enhancing raw material purchasing capacity.",
-            "Investing in smart agricultural warehouse systems and modern processing."
-          ]
-        },
-        "warehouse_service": {
-          "title": "Warehouse Service Development",
-          "items": [
-            "Leading in trade chains, deep processing, and exports.",
-            "Developing nationwide warehouse services."
-          ]
-        }
-      },
-      "stats": {
-        "revenue": "7,200",
-        "revenue_subtitle": "Billion VND revenue in 2024",
-        "tons": "66,000", 
-        "tons_subtitle": "Tons/ year",
-        "bags": "1.1 million",
-        "bags_subtitle": "Bags/ Year",
-        "experience": "30+ years",
-        "experience_subtitle-top": "Experience in production, sourcing",
-        "experience_subtitle-bottom": "& international agricultural export",
-        "factory_warehouse": "02",
-        "factory_warehouse_subtitle": "Warehouses / factories",
-        "agricultural_services": "03",
-        "agricultural_services_subtitle": "Investment projects"
-      }
+      "title": "About Us",
+      "main_description": "Pioneering Green Development Investment Group",
+      "second_description": "At Agronexus Capital, we promote connectivity and sustainable development in the fields of agriculture, energy, and minerals...",
+      "third_description": "As a strategic bridge between innovative businesses and investors, Agronexus Capital provides capital, technology, and necessary resources to optimize growth performance and create sustainable value for the entire ecosystem.",
+      "see_more": "See more"
     },
     "products_section": {
       "title": "TANTAI'S BUSINESS PRODUCT LINES",
