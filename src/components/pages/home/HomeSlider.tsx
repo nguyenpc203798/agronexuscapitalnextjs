@@ -89,6 +89,12 @@ const HomeSlider = memo(() => {
         .swiper-pagination-bullet-active {
           background: #fff;
         }
+
+        @media (max-width: 768px) {
+          .swiper-pagination {
+            left: 90% !important;
+          }
+        }
       `}</style>
     </div>
   );

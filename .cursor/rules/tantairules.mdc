@@ -35,7 +35,7 @@ alwaysApply: true
 
 - Apply lazy loading and code splitting via next/dynamic to load components only when necessary.
 
-- Optimize images with Next.js's built-in <Image> component.
+- Optimize images with Next.js's built-in <LazyImage> component.
 
 ## Navigation
 
@@ -69,3 +69,5 @@ Responsiveness
 ## Always ensure responsiveness within source code:
 
 - Always pay attention to responsiveness in the source code to ensure good performance across all devices.
+
+## Always call mcp context7 to look up syntax information

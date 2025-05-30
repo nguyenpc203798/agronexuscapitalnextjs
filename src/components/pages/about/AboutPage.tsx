@@ -2,10 +2,10 @@
 
 import MainLayout from "@/layouts/MainLayout";
 import PageHero from "@/components/ui/PageHero";
-import AboutCompanyIntro from "@/components/pages/about/AboutCompanyIntro";
-import AboutVisionMission from "@/components/pages/about/AboutVisionMission";
-import AboutCoreValues from "@/components/pages/about/AboutCoreValues";
-// import AboutCallToAction from "@/components/pages/about/AboutCallToAction";
+import AboutSection from "@/components/pages/home/AboutSection";
+import VisionMissionSection from "@/components/pages/about/VisionMissionSection";
+import CoreValuesSection from "@/components/pages/home/CoreValuesSection";
+import GroupSizeSection from "@/components/pages/home/GroupSizeSection";
 
 const AboutPage = () => {
   return (
@@ -16,20 +16,22 @@ const AboutPage = () => {
           title: 'about.hero.title',
           description: 'about.hero.description'
         }}
-        backgroundImage={"/images/gioithieu/hero.jpg"}
+        variant="simple"
       />
       
-      {/* Company Introduction Section */}
-      <AboutCompanyIntro />
-      
-      {/* Vision & Mission Section */}
-      <AboutVisionMission />
-      
+      {/* About Section */}
+      <AboutSection />
+
+      {/* Vision Mission Section */}
+      <VisionMissionSection />
+
       {/* Core Values Section */}
-      <AboutCoreValues />
+      <CoreValuesSection />
+
+      {/* Group Size Section */}
+      <GroupSizeSection />
+
       
-      {/* Call to Action Section */}
-      {/* <AboutCallToAction /> */}
     </MainLayout>
   );
 };

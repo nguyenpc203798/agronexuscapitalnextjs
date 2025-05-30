@@ -24,7 +24,7 @@ const Loading = () => (
 );
 
 const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
-  const { t } = useLanguage();
+  const { t, currentLocale } = useLanguage();
 
   if (!news) {
     return <div className="min-h-screen flex items-center justify-center">
@@ -49,8 +49,9 @@ const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
         <div className="container mx-auto px-4 py-10 flex flex-col lg:flex-row gap-8">
           <div className="w-full lg:w-3/4">
             <motion.article
+              key={`news-detail-${news.id}-${currentLocale}`}
               initial="hidden"
-              whileInView="visible"
+              animate="visible"
               viewport={{ once: true, amount: 0.1 }}
               variants={staggerChildren}
               className="bg-white dark:bg-gray-800 rounded-[2rem] shadow-md p-6 mb-8"
@@ -107,7 +108,7 @@ const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
                 <span className="font-medium text-gray-700 dark:text-gray-300">{t('news.tags.title')}:</span>
                 {news.tags.map((tag, idx) => (
                   <Link 
-                    key={idx} 
+                    key={`tag-${idx}-${currentLocale}`} 
                     href={`/news?tag=${tag.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-sm bg-gray-100 dark:bg-gray-700 hover:bg-[#e7ece5] dark:hover:bg-gray-600 px-3 py-1 rounded-full text-gray-600 dark:text-gray-300 hover:text-[#1a3d0a] dark:hover:text-white transition-colors duration-300"
                   >
@@ -119,8 +120,9 @@ const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
 
             {/* Tin tức liên quan */}
             <motion.div
+              key={`related-news-${currentLocale}`}
               initial="hidden"
-              whileInView="visible"
+              animate="visible"
               viewport={{ once: true, amount: 0.1 }}
               variants={staggerChildren}
               className="space-y-6"
@@ -134,7 +136,7 @@ const NewsDetailContent = memo(({ news, relatedNews }: NewsDetailProps) => {
               <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {relatedNews.map((item) => (
                   <motion.div 
-                    key={item.id}
+                    key={`related-${item.id}-${currentLocale}`}
                     variants={fadeInUp}
                     className="bg-white dark:bg-gray-800 rounded-[2rem] overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 group"
                   >

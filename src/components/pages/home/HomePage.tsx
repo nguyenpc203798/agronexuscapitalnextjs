@@ -8,6 +8,7 @@ import CoreValuesSection from "@/components/pages/home/CoreValuesSection";
 import GroupSizeSection from "@/components/pages/home/GroupSizeSection";
 import InvestmentFieldsSection from "@/components/pages/home/InvestmentFieldsSection";
 import IndustrySection from "@/components/pages/home/IndustrySection";
+import NewsSection from "@/components/pages/home/NewsSection";
 
 const HomePage = () => {
   return (
@@ -32,6 +33,9 @@ const HomePage = () => {
 
       {/* Industry Detail Sections */}
       <IndustrySection />
+      
+      {/* News Section */}
+      <NewsSection />
     </MainLayout>
   );
 };

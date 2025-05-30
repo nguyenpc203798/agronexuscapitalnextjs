@@ -2,18 +2,13 @@
   "nav": {
     "home": "Trang Chủ",
     "about": "Giới Thiệu",
-    "products": "Ngành Hàng",
-    "products_items": {
-      "coffee": "Cà Phê",
-      "rubber": "Cao Su Thiên Nhiên",
-      "tapioca": "Tinh Bột Sắn",
-      "cashew": "Hạt Điều",
-      "star_anise": "Hoa Hồi",
-      "cinnamon": "Quế",
-      "pepper": "Hạt Tiêu"
-    },
+    "categories": "Ngành Hàng Đầu Tư",
     "news": "Tin Tức",
     "contact": "Liên Hệ"
+  },
+  "theme_switcher": {
+    "dark_mode": "Bật chế độ tối",
+    "light_mode": "Bật chế độ sáng"
   },
   "home": {
     "slider": {
@@ -28,147 +23,163 @@
       "third_description": "Với vai trò là cầu nối chiến lược giữa các doanh nghiệp có tư duy đổi mới và nhà đầu tư, Agronexus Capital cung cấp vốn, công nghệ và các nguồn lực cần thiết nhằm tối ưu hóa hiệu suất tăng trưởng và kiến tạo giá trị bền vững cho toàn bộ hệ sinh thái.",
       "see_more": "Xem thêm"
     },
-    "products_section": {
-      "title": "CÁC NGÀNH HÀNG KINH DOANH CỦA TẤN TÀI",
-      "center_image_alt": "Cảnh quan đồn điền cà phê xanh tươi với núi non và bầu trời xanh",
-      "products": {
-        "coffee": {
-          "name": "Cà Phê",
-          "description": "Cà phê là một trong những mặt hàng xuất khẩu chủ lực của Việt Nam. Công ty Tấn Tài cung cấp các loại cà phê chất lượng tốt nhất và đáng tin cậy nhất với khách hàng."
-        },
-        "tapioca": {
-          "name": "Tinh Bột Sắn",
-          "description": "Tinh bột sắn được ứng dụng rộng rãi trong công nghiệp thực phẩm. Công ty Tấn Tài đã và đang đầu tư mạnh mẽ vào sản xuất sản phẩm tinh bột sắn và được bạn hàng đánh giá cao về chất lượng."
-        },
-        "star_anise": {
-          "name": "Hoa Hồi",
-          "description": "Hoa hồi, một loại gia vị phổ biến có nguồn gốc từ Việt Nam và Trung Quốc. Công ty Tấn Tài sản xuất và xuất khẩu hoa hồi chất lượng cao đến nhiều thị trường quốc tế như Châu Á, EU và Mỹ."
-        },
-        "rubber": {
-          "name": "Cao Su Thiên Nhiên",
-          "description": "Với vùng nguyên liệu rộng lớn, công nghệ sản xuất tiên tiến cùng đội ngũ chuyên gia giàu kinh nghiệm, Công ty Tấn Tài cung cấp các sản phẩm cao su chất lượng cao cho thị trường trong nước và quốc tế."
-        },
-        "cashew": {
-          "name": "Hạt Điều",
-          "description": "Là thực phẩm được ưa chuộng toàn cầu. Công ty Tấn Tài cung cấp hạt điều nhân và rang, đảm bảo chất lượng cao theo tiêu chuẩn Quốc Tế."
-        },
-        "cinnamon": {
-          "name": "Quế",
-          "description": "Việt Nam là một trong những nhà cung cấp quế chất lượng cao hàng đầu thế giới. Công ty Tấn Tài là nhà sản xuất và xuất khẩu quế hữu cơ hàng đầu, hướng tới mục tiêu trồng mới 1.000 ha mỗi năm đến 2030."
-        }
-      }
-    },
-    "warehouse_section": {
-      "title": "NHÀ MÁY - KHO HÀNG",
-      "image1_alt": "Bên trong kho hàng lớn với xe nâng và chồng pallet",
-      "image2_alt": "Xe nâng đang nâng các bao tải trắng bên trong kho hàng với ánh sáng ấm",
-      "image3_alt": "Cổng xếp dỡ kho hàng với pallet và xe tải đỗ sát cửa",
-      "image4_alt": "Hai người đội mũ cứng đang thảo luận bên trong lối đi kho hàng"
-    },
-    "news_section": {
-      "section_label": "Tin tức & cập nhật",
-      "heading": "Nhiều cơ hội tăng trưởng xuất khẩu cà phê",
-      "description": "Theo Tổng cục Hải quan, từ đầu năm 2024 đến ngày 15/10, Việt Nam đã xuất khẩu 1,13 triệu tấn cà-phê với kim ngạch 4,44 tỷ USD, giảm 11,1% về lượng nhưng tăng 39,1% về giá trị so với cùng kỳ năm 2023.",
-      "view_more": "Xem thêm",
-      "news_items": {
-        "item1": {
-          "date": "05 Tháng 01, 2025",
-          "title": "Xuất khẩu cà phê niên vụ 2023/2024 vượt mốc 5 tỷ USD",
-          "alt": "Cận cảnh bàn tay cầm quả cà phê chín đỏ với một số quả đang rơi"
-        },
-        "item2": {
-          "date": "05 Tháng 01, 2025",
-          "title": "Cánh cửa rộng mở cho xuất khẩu cà-phê năm 2024 chinh phục đỉnh cao mới",
-          "alt": "Hình ảnh cận cảnh hạt cà phê rang trong hộp đựng"
-        },
-        "item3": {
-          "date": "05 Tháng 01, 2025",
-          "title": "Xuất khẩu cà phê niên vụ 2023/2024 vượt mốc 5 tỷ USD",
-          "alt": "Cận cảnh bàn tay cầm quả cà phê chín đỏ với một số quả đang rơi"
-        },
-        "item4": {
-          "date": "05 Tháng 01, 2025",
-          "title": "Cánh cửa rộng mở cho xuất khẩu cà-phê năm 2024 chinh phục đỉnh cao mới",
-          "alt": "Hình ảnh cận cảnh hạt cà phê rang trong hộp đựng"
-        }
-      }
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "Về Chúng Tôi",
-      "description": "Tantai Trading là công ty hàng đầu cung cấp giải pháp kinh doanh chuyên nghiệp tại Việt Nam. Chúng tôi tận tâm giúp các doanh nghiệp phát triển và thành công."
-    },
-    "company_intro": {
-      "title": "Giới Thiệu Công Ty",
-      "paragraph1": "Công ty Tấn Tài tự hào là đơn vị tiên phong trong lĩnh vực nông nghiệp, chuyên sâu vào đầu tư, sản xuất, phân phối và xuất khẩu các sản phẩm nông nghiệp hàng đầu khu vực. Chúng tôi tập trung phát triển các sản phẩm chủ lực như cà phê, hạt tiêu, hoa hồi, quế – những mặt hàng đại diện cho chất lượng và giá trị nông sản Việt Nam.",
-      "paragraph2": "Với triết lý kinh doanh đặt chất lượng lên hàng đầu, mỗi sản phẩm của Công ty Tấn Tài được chăm sóc kỹ lưỡng từ giai đoạn trồng trọt, thu hoạch đến chế biến và đóng gói, đảm bảo đạt tiêu chuẩn quốc tế. Mạng lưới khách hàng và đối tác toàn cầu của chúng tôi là minh chứng cho cam kết về chất lượng và sự tín nhiệm mà công ty đã xây dựng qua thời gian.",
-      "paragraph3": "Hệ thống sản xuất của Công ty Tấn Tài bao gồm hệ thống các nhà máy chế biến hiện đại tại nhiều tình thành, kết hợp với mạng lưới trạm thu mua trải dài khắp các tỉnh thành. Đội ngũ chuyên gia giàu kinh nghiệm và mô hình quản lý chuyên nghiệp giúp chúng tôi đảm bảo sự vận hành hiệu quả, đáp ứng nhanh chóng và chính xác nhu cầu của khách hàng trong môi trường kinh doanh đầy cạnh tranh.",
-      "paragraph4": "Chúng tôi tin rằng sự hài lòng của khách hàng là kim chỉ nam cho mọi hoạt động. Với phương châm \"Chất lượng, Trung thực, Hạnh phúc,\" Công ty Tấn Tài không chỉ cung cấp sản phẩm chất lượng cao mà còn cam kết đáp ứng các tiêu chuẩn quốc tế như USDA Organic, EU Organic, HACCP, BRCGS, Halal, Kosher, Fairtrade and ISO 22000, ISO 9001 và xây dựng giá trị bền vững cho cộng đồng và nền kinh tế.",
-      "image1_alt": "Công ty Tấn Tài - Hình ảnh nông sản chất lượng cao",
-      "image2_alt": "Hệ thống sản xuất và chế biến nông sản Tấn Tài"
-    },
-    "vision_mission": {
-      "title": "Tầm Nhìn & Sứ Mệnh",
-      "vision_title": "Tầm Nhìn",
-      "vision_content": "Với khát vọng tiên phong và chiến lược phát triển bền vững, Tấn Tài kết nối thị trường nội địa với mạng lưới quốc tế, đưa nông sản Việt Nam trở thành thương hiệu quốc gia trong chuỗi cung ứng toàn cầu.",
-      "mission_title": "Sứ Mệnh",
+    "vision_mission_section": {
+      "vision_title": "Tầm nhìn",
+      "vision_description": "Với khát vọng tiên phong và chiến lược phát triển bền vững, Agronexus Capital định hướng trở thành Tập đoàn Đầu tư Tài chính Xanh hàng đầu khu vực, mang tầm vóc quốc tế, đưa thương hiệu nông sản Việt Nam ra khắp thế giới.",
+      "mission_title": "Sứ mệnh",
       "mission_items": {
-        "item1": "Cách mạng hoá ngành nông nghiệp Việt Nam thông qua đầu tư vào tổng kho dịch vụ nông sản",
-        "item2": "Đảm bảo minh bạch và chuẩn hoá từ thu mua đến xuất khẩu, xây dựng niềm tin vững chắc với đối tác",
-        "item3": "Tối ưu hoá vận hành, giảm chi phí dựa trên hệ thống kho bãi và logistics thông minh",
-        "item4": "Nâng tầm thương hiệu nông sản Việt Nam, đưa cà phê và sản phẩm chủ lực ra thị trường thế giới, đồng hành cùng chiến lược phát triển nông nghiệp bền vững quốc gia"
+        "item1_strong": "Cách mạng hoá ngành nông nghiệp Việt Nam ",
+        "item1": "thông qua đầu tư vào tổng kho dịch vụ nông sản",
+        "item2_strong": "Chống lãng phí tài nguyên, tăng hiệu suất sử dụng đất",
+        "item2": "dựa trên các giải pháp đầu tư công nghệ cao.",
+        "item3_strong": "Tạo dựng nền tảng hỗ trợ các doanh nghiệp tối ưu hóa chi phí",
+        "item3": "bằng cách đầu tư phát triển hệ thống logistics và kho bãi thông minh.",
+        "item4_strong": "Xây dựng các thương hiệu thuộc hệ sinh thái Agronexus đạt tầm vóc quốc tế",
+        "item4": "để cộng hưởng vào định hướng chiến lược của Đảng và Nhà nước, nâng tầm thương hiệu quốc gia.",
+        "item5_strong": "Góp phần hiện thực hóa chủ trương mục tiêu Net Zero 2050 của Việt Nam",
+        "item5": "qua chiến lược đầu tư xanh và phát triển trung hòa carbon."
       }
     },
-    "core_values": {
+    "core_values_section": {
       "title": "Giá Trị Cốt Lõi",
-      "description": "Những giá trị định hướng cho mọi hoạt động và quyết định của chúng tôi",
-      "values": {
-        "quality": {
-          "title": "Chất lượng & Uy tín",
-          "description": "Đảm bảo nông sản (cà phê, cao su và các mặt hàng nông sản khác) đạt chuẩn quốc tế, xây dựng uy tín bằng quy trình minh bạch và thương mại tin cậy."
-        },
-        "partnership": {
-          "title": "Hợp tác bền vững",
-          "description": "Thiết lập quan hệ lâu dài với nông dân, doanh nghiệp xuất khẩu và tổ chức nông nghiệp, thúc đẩy chuỗi thu mua bền vững, đảm bảo giá trị ổn định cho ngành."
-        },
-        "innovation": {
-          "title": "Đổi mới & Sáng tạo",
-          "description": "Ứng dụng công nghệ số (IoT, AI, Blockchain...) để tối ưu quản lý, logistics và chất lượng nông sản."
-        },
-        "responsibility": {
-          "title": "Trách nhiệm cộng đồng",
-          "description": "Hỗ trợ nông dân về vốn, kỹ thuật canh tác, công nghệ và đảm bảo đầu ra ổn định; cung cấp dịch vụ trọn gói từ thu mua đến xuất khẩu; định hướng chế biến sâu để gia tăng giá trị sản phẩm."
-        }
+      "Commitment_title": "Cam kết",
+      "Commitment_description": "Cam kết mang lại giá trị thực cho nhà đầu tư, đối tác và cộng đồng.",
+      "Collaboration_title": "Đồng hành",
+      "Collaboration_description": "Đồng hành cùng phát triển bền vững với nhà đầu tư, doanh nghiệp.",
+      "Sustainability_title": "Bền vững",
+      "Sustainability_description": "Cân bằng phát triển kinh doanh, lợi ích nhà đầu tư, doanh nghiệp với bảo vệ môi trường và trách nhiệm xã hội.",
+      "Innovation_title": "Đổi mới",
+      "Innovation_description": "Tiên phong công nghệ xanh, đổi mới giải pháp sáng tạo, nâng cao hiệu quả và chất lượng sản phẩm dịch vụ."
+    },
+    "group_size_section": {
+      "title": "Quy mô tập đoàn",
+      "counter_items": {
+        "investment_sectors": "Ngành hàng đầu tư",
+        "investment_plans": "Đề án đầu tư",
+        "investment_projects": "Dự án đầu tư",
+        "factories_warehouses": "Nhà máy / kho",
+        "sales_points": "Hệ thống điểm bán",
+        "staff": "Đội ngũ nhân sự"
       }
     },
-    "cta": {
-      "title": "Đồng Hành Cùng Tấn Tài",
-      "description": "Trở thành đối tác hoặc khách hàng của Tấn Tài để cùng nhau phát triển và đạt được giá trị bền vững.",
-      "button": "Liên Hệ Ngay"
-    }
-  },
-  "theme_switcher": {
-    "dark_mode": "Bật chế độ tối",
-    "light_mode": "Bật chế độ sáng"
-  },
-  "footer": {
-    "link": "Liên kết",
-    "slogan": "Cung cấp nông sản chuyên nghiệp cho khách hàng ở mọi quy mô.",
-    "copyright": "© 2025 Tantai Trading. Đã đăng ký Bản quyền.",
-    "links": {
-      "privacy": "Chính Sách Bảo Mật",
-      "terms": "Điều Khoản Dịch Vụ"
+    "investment_fields_section": {
+      "title": "Ngành hàng đầu tư",
+      "fields": {
+        "agriculture": "Nông nghiệp",
+        "energy": "Năng lượng",
+        "minerals": "Khoáng sản",
+        "aquaculture": "Thủy sản",
+        "logistics": "Kho cảng & logistics"
+      }
     },
-    "contact_info": {
-      "head_office": "Trụ sở chính: Khu phố 2, Thị trấn Tân Nghĩa, Huyện Hàm Tâm, Tỉnh Bình Thuận, Việt Nam",
-      "phone": "0899.565.868",
-      "email": "info@tantaitrading.com",
-      "response": "Phản hồi 24/7 qua điện thoại và email."
-    },
-    "representative_office": {
-      "title": "Văn Phòng Đại diện",
-      "content": " 9-11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam"
+    "industry_section": {
+      "section_title": "Ngành hàng chi tiết",
+      "agriculture": {
+        "title": "Nông nghiệp",
+        "investment_direction": "Định hướng đầu tư",
+        "investment_content": "Ứng dụng công nghệ cao từ vùng trồng đến chế biến sâu hướng đến thị trường toàn cầu.",
+        "sub_industries": "Phân ngành",
+        "sub_industries_list": {
+          "dry_grain": "Nông sản hạt khô",
+          "processed": "Nông sản chế biến (Tinh bột, cao su)",
+          "supplies": "Vật tư nông nghiệp",
+          "fresh": "Nông sản tươi",
+          "forest": "Rừng và dược liệu"
+        },
+        "agriculture_images": {
+          "dry_grain": "Hạt khô",
+          "starch": "Tinh bột",
+          "rubber": "Cao su",
+          "fresh": "Nông sản tươi",
+          "supplies": "Vật tư nông nghiệp",
+          "forest": "Rừng và dược liệu"
+        },
+        "investment_projects": "Đề án đầu tư",
+        "smart_warehouse": {
+          "title": "Tổng kho nông sản thông minh",
+          "description": "Tổng kho thông minh là hệ thống kho lưu trữ sử dụng công nghệ cao như tự động hóa, AI và IoT để tối ưu hóa việc quản lý, phân phối và theo dõi hàng hóa. Tổng kho thông minh có khả năng tự động hóa quy trình nhập, xuất và kiểm tra hàng hóa, giúp giảm thiểu sai sót và tăng cường hiệu quả vận hành, đồng thời giảm chi phí và thời gian lưu kho."
+        },
+        "high_tech_farm": {
+          "title": "Chuỗi nông trại công nghệ cao",
+          "description": "Phát triển chuỗi nông trại công cao trên khắp Việt Nam, chuyên canh tác rau củ và trái cây giá trị cao phục vụ cả xuất khẩu và thị trường nội địa."
+        },
+        "reference_image": "Ảnh tham khảo"
+      },
+      "energy": {
+        "title": "Năng lượng",
+        "investment_direction": "Định hướng đầu tư",
+        "investment_content": "Việt Nam đang dịch chuyển từ nguồn năng lượng truyền thống sang điện mặt trời, điện gió, sinh khối, đảm bảo nguồn năng lượng bền vững, giảm phát thải và thúc đẩy tăng trưởng xanh.",
+        "sub_industries": "Phân ngành",
+        "sub_industries_list": {
+          "petroleum": "Xăng dầu & Trạm sạc điện",
+          "renewable": "Năng lượng tái tạo"
+        },
+        "energy_images": {
+          "petroleum": "Xăng dầu",
+          "charging": "Trạm sạc điện",
+          "wind": "Điện gió",
+          "solar": "Điện mặt trời",
+          "biomass": "Năng lượng sinh khối"
+        },
+        "investment_projects": "Đề án đầu tư",
+        "project1": {
+          "description": "Chuỗi trạm năng lượng kết hợp dừng nghỉ và logistics với vị trí chiến lược, dự án tích hợp dịch vụ tiện ích, năng lượng, lưu trú, F&B cùng khu du lịch sinh thái mini, hướng đến trở thành trung tâm giao thông – thương mại kiểu mẫu tại khu vực ven biển phía Nam."
+        },
+        "project2": {
+          "description": "Chuỗi trạm năng lượng kết hợp dừng nghỉ và logistics là dự án tích hợp trạm xăng, trạm sạc điện, kho vận, dịch vụ tiện ích và khu bảo dưỡng xe, hướng đến trở thành điểm kết nối giao thương – logistics – năng lượng – tiêu dùng trọng điểm tại khu vực biên giới Tây Nam."
+        },
+        "reference_image": "Ảnh tham khảo"
+      },
+      "minerals": {
+        "title": "Khoáng sản",
+        "investment_direction": "Định hướng đầu tư",
+        "investment_content": "Ngành khoáng sản (đá ốp lát, đá xây dựng, cát, kim loại,...) có tiềm năng lớn nhờ trữ lượng dồi dào và chất lượng cao tại Việt Nam. Việc ứng dụng công nghệ cao trong khai thác và chế biến giúp nâng giá trị tài nguyên, tối ưu hiệu suất và giảm tác động môi trường.",
+        "sub_industries": "Phân ngành",
+        "minerals_images": {
+          "stone": "Đá xây dựng",
+          "sand": "Cát xây dựng",
+          "tile": "Gạch ốp lát"
+        }
+      },
+      "aquaculture": {
+        "title": "Thủy sản",
+        "investment_direction": "Định hướng đầu tư",
+        "investment_content": "Ngành thủy sản là lĩnh vực xuất khẩu chiến lược của Việt Nam, với tiềm năng lớn từ lợi thế tự nhiên. Việc ứng dụng công nghệ cao trong nuôi trồng và chế biến đang mở ra hướng phát triển bền vững, nâng cao giá trị và khả năng cạnh tranh toàn cầu.",
+        "sub_industries": "Phân ngành",
+        "aquaculture_images": {
+          "seafood1": "Thủy sản 1",
+          "seafood2": "Thủy sản 2",
+          "seafood3": "Thủy sản 3"
+        }
+      },
+      "logistics": {
+        "title": "Kho - cảng - Logistics",
+        "investment_direction": "Định hướng đầu tư",
+        "investment_content": "Ngành Kho – Cảng – Logistics đóng vai trò hậu cần chiến lược cho toàn bộ chuỗi cung ứng nông nghiệp – công nghiệp – xuất nhập khẩu.",
+        "services_list": {
+          "port": "Dich vụ Cảng quốc tế - Cảng nội địa - Cảng Cạn.",
+          "warehouse": "Dịch vụ Tổng kho và trung tâm phân phối.",
+          "transport": "Dịch vụ vận tải vận chuyển."
+        },
+        "investment_projects": "Đề án đầu tư",
+        "port_services": {
+          "title": "Dịch vụ Cảng Quốc tế - Cảng Nội địa - Cảng Cạn",
+          "description": "Kết nối chuỗi cung ứng xanh từ cảng quốc tế đến ICD (cảng cạn) giúp giảm chi phí logistics và tăng hiệu quả nguồn lực."
+        },
+        "warehouse_services": {
+          "title": "Dịch vụ Tổng kho và Trung tâm phân phối",
+          "description": "Hệ thống kho thông minh tích hợp công nghệ chuỗi lạnh và quản lý nguồn gốc hàng hóa."
+        },
+        "transport_services": {
+          "title": "Dịch vụ Vận tải vận chuyển",
+          "description": "Vận tải kết nối chuỗi cung ứng từ các trung tâm chế biến như chuỗi nông trại công nghệ cao và chuỗi trạm dừng nghỉ tích hợp."
+        },
+        "reference_image": "Ảnh tham khảo"
+      },
+      "news_section": {
+        "title": "Tin tức",
+        "more_news": "Xem thêm"
+      }
     }
   },
   "news": {
@@ -270,115 +281,29 @@
       "description": "Văn phòng đại diện của chúng tôi tại Thành phố Hồ Chí Minh"
     }
   },
-  "category": {
-    "title": "Danh Mục Sản Phẩm Của Chúng Tôi",
-    "subtitle": "Tấn Tài cung cấp các sản phẩm nông nghiệp chất lượng cao đạt tiêu chuẩn quốc tế",
-    "products": {
-      "coffee": {
-        "title": "CÀ PHÊ",
-        "subtitle": "Cà Phê Chất Lượng Cao",
-        "description": {
-          "paragraph1": "Cà phê từ lâu đã trở thành thức uống yêu thích của hàng triệu người trên thế giới. Trong đó, hai loại cà phê phổ biến nhất, Robusta và Arabica, nổi tiếng nhờ hương vị đặc trưng và chất lượng vượt trội. Với lợi thế địa lý, điều kiện thời tiết thuận lợi, cùng chi phí sản xuất cạnh tranh, Việt Nam đã khẳng định vị thế là một trong những quốc gia sản xuất cà phê hàng đầu thế giới.",
-          "paragraph2": "Công ty Tấn Tài tự hào đóng góp vào sự phát triển ngành cà phê Việt Nam với hệ thống nhà máy chế biến hiện đại, đặt ngay tại vùng nguyên liệu. Đặc biệt, chúng tôi đang đầu tư vào nhà máy cà phê hòa tan với quy mô là một trong ba nhà máy duy nhất tại Việt Nam đầu tư công nghệ sấy lạnh tiên tiến, đáp ứng các tiêu chuẩn quốc tế. Chúng tôi cung cấp đa dạng các loại cà phê Robusta và Arabica nhân xanh chưa rang, bao gồm Robusta chế biến khô và Arabica chế biến ướt, chế biến khô và cà phê rang xay sấy phun (rang nhẹ, rang vừa, rang đậm), cà phê hòa tan sấy lạnh, dịch cà phê trích ly.",
-          "paragraph3": "Với cam kết về chất lượng, sự đổi mới không ngừng và tập trung vào khách hàng, Công ty Tấn Tài luôn nỗ lực trở thành đối tác đáng tin cậy, mang đến những sản phẩm cà phê chất lượng cao, góp phần nâng tầm giá trị nông sản Việt Nam trên thị trường quốc tế."
-        },
-        "image_alts": {
-          "alt1": "Hạt cà phê Robusta và Arabica chất lượng cao",
-          "alt2": "Quá trình thu hoạch cà phê tại đồn điền Tấn Tài",
-          "alt3": "Nhà máy chế biến cà phê hiện đại của Tấn Tài",
-          "alt4": "Cà phê Tấn Tài đạt tiêu chuẩn quốc tế"
-        }
-      },
-      "rubber": {
-        "title": "CAO SU THIÊN NHIÊN",
-        "subtitle": "Sản Phẩm Cao Su Thiên Nhiên Cao Cấp",
-        "description": {
-          "paragraph1": "Việt Nam hiện là nhà sản xuất cao su lớn thứ ba trên thế giới với hơn 940.000 ha cây cao su. Sản lượng cao su thiên nhiên của đất nước chiếm khoảng 8,3% sản lượng toàn cầu, với tổng sản lượng hàng năm trên 1,2 triệu tấn. Điều này khiến Việt Nam trở thành một trong những nước xuất khẩu cao su lớn nhất trên thị trường thế giới.",
-          "paragraph2": "Công ty Tấn Tài chuyên cung cấp cao su thiên nhiên SVR CV, SVR L và SVR 3L đạt tiêu chuẩn quốc tế. Sản phẩm cao su của chúng tôi được công nhận về độ dẻo cao, độ giãn tốt và đặc tính co giãn nổi bật, làm cho chúng phù hợp với nhiều ứng dụng công nghiệp khác nhau.",
-          "paragraph3": "Thông qua quy trình kiểm soát chất lượng nghiêm ngặt từ đồn điền đến chế biến, chúng tôi đảm bảo rằng các sản phẩm cao su thiên nhiên của chúng tôi đáp ứng các tiêu chuẩn cao nhất về chất lượng và độ ổn định. Cơ sở chế biến hiện đại và đội ngũ kinh nghiệm cho phép chúng tôi duy trì chất lượng vượt trội của sản phẩm và đáp ứng nhu cầu đa dạng của khách hàng ở cả thị trường trong nước và quốc tế."
-        },
-        "image_alts": {
-          "alt1": "Chế biến cao su thiên nhiên tại nhà máy Tấn Tài",
-          "alt2": "Tấm cao su chất lượng cao được sản xuất bởi Tấn Tài",
-          "alt3": "Kiểm soát chất lượng sản phẩm cao su tại Tấn Tài",
-          "alt4": "Sản phẩm cao su của Tấn Tài sẵn sàng xuất khẩu"
-        }
-      },
-      "tapioca": {
-        "title": "TINH BỘT SẮN",
-        "subtitle": "Sản Phẩm Tinh Bột Sắn Chất Lượng Cao",
-        "description": {
-          "paragraph1": "Tinh bột sắn, được chiết xuất từ củ sắn, là một nguyên liệu đa dụng được sử dụng rộng rãi trong chế biến thực phẩm, dệt may, dược phẩm và các ngành công nghiệp khác. Việt Nam đã trở thành một trong những nhà sản xuất tinh bột sắn lớn trên thế giới, với các sản phẩm chất lượng cao đáp ứng tiêu chuẩn quốc tế.",
-          "paragraph2": "Công ty Tấn Tài chuyên sản xuất và xuất khẩu tinh bột sắn cao cấp. Sản phẩm của chúng tôi nổi tiếng với độ tinh khiết cao, độ nhớt tuyệt vời và chất lượng ổn định. Chúng tôi chế biến tinh bột sắn bằng công nghệ tiên tiến, đảm bảo đáp ứng các yêu cầu nghiêm ngặt của thị trường quốc tế.",
-          "paragraph3": "Tinh bột sắn của chúng tôi được sản xuất dưới các biện pháp kiểm soát chất lượng nghiêm ngặt từ việc lựa chọn nguyên liệu thô đến đóng gói cuối cùng. Chúng tôi cung cấp nhiều cấp độ tinh bột sắn khác nhau được thiết kế để đáp ứng các nhu cầu công nghiệp khác nhau. Dù cho ứng dụng thực phẩm, dệt may, giấy hay công nghiệp, sản phẩm tinh bột sắn của chúng tôi đều cung cấp hiệu suất đáng tin cậy và chất lượng vượt trội."
-        },
-        "image_alts": {
-          "alt1": "Sản xuất tinh bột sắn tại cơ sở Tấn Tài",
-          "alt2": "Bột tinh bột sắn tinh khiết cao",
-          "alt3": "Kiểm tra chất lượng sản phẩm tinh bột sắn",
-          "alt4": "Đóng gói tinh bột sắn cho thị trường xuất khẩu"
-        }
-      },
-      "cashew": {
-        "title": "HẠT ĐIỀU",
-        "subtitle": "Sản Phẩm Hạt Điều Cao Cấp",
-        "description": {
-          "paragraph1": "Hạt điều là một trong những loại hạt bổ dưỡng và đa dụng nhất, được ưa chuộng trên toàn cầu nhờ hương vị thơm ngon và nhiều lợi ích sức khỏe. Việt Nam đã xác lập vị thế là nhà xuất khẩu hạt điều hàng đầu thế giới, nổi tiếng với việc sản xuất hạt điều chất lượng cao đáp ứng tiêu chuẩn quốc tế.",
-          "paragraph2": "Công ty Tấn Tài chuyên về chế biến và xuất khẩu hạt điều cao cấp. Sản phẩm của chúng tôi bao gồm từ hạt nguyên (W180, W210, W240, W320, W450) đến hạt vỡ (LBW, SBW, BB, SB) và hạt cháy (WS), tất cả đều đáp ứng các tiêu chuẩn chất lượng quốc tế nghiêm ngặt. Chúng tôi sử dụng công nghệ chế biến tiên tiến và các biện pháp kiểm soát chất lượng nghiêm ngặt để đảm bảo rằng hạt điều của chúng tôi giữ được hương vị tự nhiên, giá trị dinh dưỡng và hình thức hấp dẫn.",
-          "paragraph3": "Các cơ sở chế biến hạt điều của chúng tôi tuân thủ các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm các quy định HACCP, ISO, BRC và FDA. Chúng tôi lựa chọn cẩn thận nguyên liệu thô từ các nguồn đáng tin cậy và thực hiện kiểm soát chất lượng nghiêm ngặt trong suốt quá trình sản xuất, từ chế biến hạt thô đến đóng gói cuối cùng, đảm bảo rằng khách hàng nhận được sản phẩm hạt điều chất lượng cao một cách nhất quán."
-        },
-        "image_alts": {
-          "alt1": "Chế biến hạt điều cao cấp tại cơ sở Tấn Tài",
-          "alt2": "Hạt điều được phân loại và phân hạng trong sản xuất",
-          "alt3": "Kiểm tra chất lượng hạt điều",
-          "alt4": "Hạt điều đóng gói chân không sẵn sàng xuất khẩu"
-        }
-      },
-      "star_anise": {
-        "title": "HOA HỒI",
-        "subtitle": "Sản Phẩm Hoa Hồi Cao Cấp",
-        "description": {
-          "paragraph1": "Hoa hồi, nổi tiếng với hình dạng ngôi sao đặc trưng và hương vị thơm, là một loại gia vị có giá trị cao được sử dụng trong ẩm thực và y học cổ truyền trên toàn thế giới. Việt Nam, đặc biệt là ở các vùng núi phía Bắc, sản xuất ra một số loại hoa hồi tốt nhất thế giới với hàm lượng tinh dầu cao và chất lượng vượt trội.",
-          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt, chế biến và xuất khẩu hoa hồi cao cấp. Sản phẩm của chúng tôi bao gồm hoa hồi nguyên, hoa hồi vỡ, bột hoa hồi và tinh dầu hoa hồi. Chúng tôi nguồn hoa hồi cẩn thận từ các vùng trồng tốt nhất, đảm bảo rằng sản phẩm của chúng tôi có hương vị tối ưu, hương thơm và hàm lượng tinh dầu thiết yếu mà khách hàng yêu cầu.",
-          "paragraph3": "Hoa hồi của chúng tôi trải qua các quy trình kiểm soát chất lượng nghiêm ngặt, từ thu hoạch và phơi nắng đến phân loại, xếp hạng và đóng gói. Chúng tôi duy trì sự tuân thủ nghiêm ngặt các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua các phương pháp canh tác bền vững và kỹ thuật chế biến hiện đại, chúng tôi cung cấp các sản phẩm hoa hồi đáp ứng nhất quán các tiêu chuẩn cao nhất về chất lượng và độ tinh khiết."
-        },
-        "image_alts": {
-          "alt1": "Trồng hoa hồi ở vùng núi phía Bắc Việt Nam",
-          "alt2": "Thu hoạch và chế biến hoa hồi tại Tấn Tài",
-          "alt3": "Các loại sản phẩm hoa hồi khác nhau",
-          "alt4": "Kiểm tra chất lượng hoa hồi về hàm lượng tinh dầu"
-        }
-      },
-      "cinnamon": {
-        "title": "QUẾ",
-        "subtitle": "Sản Phẩm Quế Cao Cấp",
-        "description": {
-          "paragraph1": "Quế, một trong những loại gia vị lâu đời nhất thế giới, đã được đánh giá cao về hương thơm độc đáo, hương vị và đặc tính y học trong hàng nghìn năm. Quế Việt Nam (Cinnamomum loureiroi), còn được biết đến với tên gọi quế Sài Gòn hoặc Cassia, được đánh giá cao vì chất lượng vượt trội, đặc trưng bởi hàm lượng tinh dầu cao, đặc biệt là cinnamaldehyde, tạo cho nó hương vị và mùi thơm mạnh mẽ hơn so với các loại khác.",
-          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt bền vững, chế biến và xuất khẩu quế Việt Nam cao cấp. Danh mục sản phẩm của chúng tôi bao gồm quế cây (thanh), quế vỡ, mảnh quế, bột quế và tinh dầu quế. Chúng tôi lấy nguồn quế một cách tỉ mỉ từ các vùng trồng tốt nhất ở Việt Nam, nơi có điều kiện khí hậu và đất đai tối ưu góp phần phát triển quế với chất lượng đặc biệt và hàm lượng tinh dầu cao.",
-          "paragraph3": "Quế của chúng tôi trải qua một quy trình kiểm soát chất lượng toàn diện, từ thu hoạch cẩn thận và sấy khô tự nhiên đến phân loại, xếp hạng và đóng gói đúng cách. Chúng tôi tuân thủ các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua cam kết về tính bền vững và chất lượng, chúng tôi cung cấp các sản phẩm quế đáp ứng nhất quán các yêu cầu khắt khe của khách hàng toàn cầu."
-        },
-        "image_alts": {
-          "alt1": "Trồng quế ở vùng cao nguyên Việt Nam",
-          "alt2": "Thu hoạch và chế biến quế theo truyền thống",
-          "alt3": "Các loại sản phẩm quế khác nhau từ Tấn Tài",
-          "alt4": "Kiểm tra chất lượng quế về hàm lượng tinh dầu"
-        }
-      },
-      "pepper": {
-        "title": "HẠT TIÊU",
-        "subtitle": "Sản Phẩm Hạt Tiêu Cao Cấp",
-        "description": {
-          "paragraph1": "Hạt tiêu đen, thường được gọi là 'Vua của Gia vị', đã là một trong những loại gia vị có giá trị nhất và được giao dịch nhiều nhất trên thế giới trong nhiều thế kỷ. Việt Nam đã nổi lên là nhà sản xuất và xuất khẩu hạt tiêu đen lớn nhất thế giới, nổi tiếng với hạt tiêu chất lượng cao với hương thơm mạnh mẽ, vị cay nồng và đặc tính hương vị đặc biệt.",
-          "paragraph2": "Công ty Tấn Tài chuyên về trồng trọt, chế biến và xuất khẩu hạt tiêu Việt Nam cao cấp. Danh mục sản phẩm của chúng tôi bao gồm tiêu đen, tiêu trắng, tiêu xanh, tiêu đỏ và tiêu xay với nhiều cấp độ khác nhau để đáp ứng các yêu cầu thị trường khác nhau. Chúng tôi lấy nguồn tiêu từ các vùng trồng chọn lọc ở Việt Nam, nơi điều kiện khí hậu lý tưởng và đất màu mỡ góp phần phát triển hạt tiêu với hàm lượng tinh dầu tối ưu và đặc tính hương vị.",
-          "paragraph3": "Sản phẩm tiêu của chúng tôi trải qua các thủ tục kiểm soát chất lượng nghiêm ngặt, từ thu hoạch cẩn thận và phơi nắng đến làm sạch, phân loại, xếp hạng và tiệt trùng. Chúng tôi áp dụng các công nghệ chế biến tiên tiến và thực hành vệ sinh nghiêm ngặt để đảm bảo rằng tiêu của chúng tôi không có chất gây ô nhiễm và đáp ứng các tiêu chuẩn an toàn thực phẩm quốc tế, bao gồm HACCP, ISO và chứng nhận hữu cơ. Thông qua cam kết về chất lượng và tính bền vững, chúng tôi cung cấp các sản phẩm tiêu đáp ứng nhất quán kỳ vọng cao của khách hàng trên toàn thế giới."
-        },
-        "image_alts": {
-          "alt1": "Trồng hạt tiêu tại các trang trại đối tác của Tấn Tài",
-          "alt2": "Thu hoạch và chế biến tiêu theo truyền thống",
-          "alt3": "Các loại sản phẩm tiêu khác nhau từ Tấn Tài",
-          "alt4": "Kiểm tra chất lượng tiêu về hàm lượng tinh dầu"
-        }
-      }
+  "footer": {
+    "address": "Địa chỉ",
+    "address_info": {
+      "building": "Lim Tower Building",
+      "street": "9-11 Tôn Đức Thắng",
+      "ward": "Phường Bến Nghé",
+      "district": "Quận 1",
+      "city": "Tp Hồ Chí Minh"
+    },
+    "contact": "Liên hệ",
+    "contact_info": {
+      "phone": "(+84) 398 388 109",
+      "email": "info@agronexuscapital.com"
+    },
+    "copyright": "Copyright © 2025",
+    "copyright_description": " AgroNexus Capital",
+    "links": {
+      "home": "Trang chủ",
+      "about": "Về chúng tôi",
+      "categories": "Ngành hàng đầu tư",
+      "sustainability": "Phát triển bền vững",
+      "news": "Tin tức",
+      "contact": "Liên hệ"
     }
   }
 } 

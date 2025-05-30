@@ -50,7 +50,7 @@ const Header = memo(() => {
   
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 md:px-2 transition-transform duration-500 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="container border-2 border-background mx-auto px-8 py-4 blur-bg rounded-bl-[2rem] rounded-br-[2rem] md:rounded-[2rem] md:mt-4">
+      <div className="container border-foreground mx-auto px-8 py-4 blur-bg rounded-bl-[2rem] rounded-br-[2rem] md:rounded-[2rem] md:mt-4">
         <div className="flex h-12 md:h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">

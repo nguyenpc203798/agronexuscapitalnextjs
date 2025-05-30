@@ -1,45 +1,103 @@
 import { memo } from "react";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
+import { FaGoogle, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 // Tách phần Company Info thành component riêng (SRP)
-const CompanyInfo = memo(({ t }: { t: (key: string) => string }) => {
+const Address = memo(({ t }: { t: (key: string) => string }) => {
   return (
     <div className="pl-[10%] max-w-[80%]">
-      <h3 className="text-lg font-semibold mb-4">Tấn Tài Trading</h3>
-      <p className="text-justify">
-      {t("footer.slogan")}
+      <h3 className="font-semibold mb-4 text-2xl">{t("footer.address")}</h3>
+      <p className="text-white text-xl">
+        {t("footer.address_info.building")}
       </p>
+      <p className="text-white text-xl">
+        {t("footer.address_info.street")}
+      </p>
+      <p className="text-white text-xl">
+        {t("footer.address_info.ward")}
+      </p>
+      <p className="text-white text-xl">
+        {t("footer.address_info.district")}, {t("footer.address_info.city")}
+      </p>  
     </div>
   );
 });
 
-CompanyInfo.displayName = "CompanyInfo";
+Address.displayName = "Address";
+
+// Tách phần Contact Info thành component riêng (SRP)
+const ContactInfo = memo(({ t }: { t: (key: string) => string }) => {
+  return (
+    <div className="pl-[10%] max-w-[80%]">
+      <h3 className="font-semibold mb-4 text-2xl">{t("nav.contact")}</h3>
+      <address className="not-italic text-white">
+        <p className="mt-2">
+          <a href="mailto:info@tantaitrading.com" className="hover:text-primary transition-colors text-white text-xl">
+            {t("footer.contact_info.email")}
+          </a>
+        </p>
+        <p>
+          <a href="tel:+84899565868" className="hover:text-primary transition-colors text-white text-xl">
+            {t("footer.contact_info.phone")}
+          </a>
+        </p>
+      </address>
+    </div>
+  );  
+});
+
+ContactInfo.displayName = "ContactInfo";
+
+
+// Tách phần Contact Info thành component riêng (SRP)
+const Copyright = memo(({ t }: { t: (key: string) => string }) => {
+  return (
+    <div className="pl-[10%] max-w-[80%]">
+      <ul className="flex flex-row gap-4 items-center mb-4" data-wow-delay="0.4s">
+        <li><Link href="#" className="text-white hover:text-primary transition-colors"><FaGoogle size={20} /></Link></li>
+        <li><Link href="#" className="text-white hover:text-primary transition-colors"> <FaFacebook size={20} /></Link></li>
+        <li><Link href="#" className="text-white hover:text-primary transition-colors"><FaTwitter size={20} /></Link></li>
+        <li><Link href="#" className="text-white hover:text-primary transition-colors"><FaInstagram size={20} /></Link></li>
+      </ul>
+      <address className="not-italic text-white">
+        <p className="text-white text-xl">{t("footer.copyright")}</p>
+        <p className="text-white text-xl">{t("footer.copyright_description")}</p>
+      </address>
+    </div>
+  );
+});
+
+Copyright.displayName = "Copyright";
 
 // Tách phần About Links thành component riêng (SRP)
 const AboutLinks = memo(({ t }: { t: (key: string) => string }) => {
   return (
     <div className="pl-[10%] max-w-[80%]">
-      <h3 className="text-lg font-semibold mb-4">{t("footer.link")}</h3>
       <ul className="space-y-2">
         <li>
-          <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
-            {t("nav.about")}
+          <Link href="/about" className="text-white text-xl hover:text-primary transition-colors">
+            {t("footer.links.about")}
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-            {t("nav.contact")}
+          <Link href="/contact" className="text-white text-xl hover:text-primary transition-colors">
+            {t("footer.links.categories")}
           </Link>
         </li>
         <li>
-          <Link href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
-            {t("footer.links.privacy")}
+          <Link href="/privacy" className="text-white text-xl hover:text-primary transition-colors">
+            {t("footer.links.sustainability")}
           </Link>
         </li>
         <li>
-          <Link href="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-            {t("footer.links.terms")}
+          <Link href="/terms" className="text-white text-xl hover:text-primary transition-colors">
+            {t("footer.links.news")}
+          </Link>
+        </li>
+        <li>
+          <Link href="/terms" className="text-white text-xl hover:text-primary transition-colors">
+            {t("footer.links.contact")}
           </Link>
         </li>
       </ul>
@@ -49,72 +107,19 @@ const AboutLinks = memo(({ t }: { t: (key: string) => string }) => {
 
 AboutLinks.displayName = "AboutLinks";
 
-// Tách phần Contact Info thành component riêng (SRP)
-const ContactInfo = memo(({ t }: { t: (key: string) => string }) => {
-  return (
-    <div className="pl-[10%] max-w-[80%]">
-      <h3 className="text-lg font-semibold mb-4">{t("nav.contact")}</h3>
-      <address className="not-italic text-muted-foreground">
-        <p className="text-justify">{t("footer.contact_info.head_office")}</p>
-        <p className="mt-2">
-          <a href="mailto:info@tantaitrading.com" className="hover:text-primary transition-colors">
-            {t("footer.contact_info.email")}
-          </a>
-        </p>
-        <p>
-          <a href="tel:+84899565868" className="hover:text-primary transition-colors">
-            {t("footer.contact_info.phone")}
-          </a>
-        </p>
-        <p className="text-justify">{t("footer.contact_info.response")}</p>
-      </address>
-    </div>
-  );
-});
-
-ContactInfo.displayName = "ContactInfo";
-
-
-// Tách phần Contact Info thành component riêng (SRP)
-const RepresentativeOffice = memo(({ t }: { t: (key: string) => string }) => {
-  return (
-    <div className="pl-[10%] max-w-[80%]">
-      <h3 className="text-lg font-semibold mb-4">{t("footer.representative_office.title")}</h3>
-      <address className="not-italic text-muted-foreground">
-        <p className="text-justify">{t("footer.representative_office.content")}</p>
-      </address>
-    </div>
-  );
-});
-
-RepresentativeOffice.displayName = "RepresentativeOffice";
-
-// Tách phần Copyright thành component riêng (SRP)
-const Copyright = memo(({ t }: { t: (key: string) => string }) => {
-  return (
-    <div className="border-t border-border mt-8 pt-8 text-muted-foreground">
-      <p className="text-center">{t("footer.copyright")}</p>
-    </div>
-  );
-});
-
-Copyright.displayName = "Copyright";
-
 // Component chính
 const Footer = memo(() => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-tantai py-12">
+    <footer className="bg-tantai py-[120px] bg-[#364a3d] dark:bg-[#487758]">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <CompanyInfo t={t} />
-          <AboutLinks t={t} />
+        <div className="grid grid-cols-1 ml-10 md:ml-0 md:grid-cols-4 gap-8 font-semibold text-white">
+          <Address t={t} />
           <ContactInfo t={t} />
-          <RepresentativeOffice t={t} />
+          <Copyright t={t} />
+          <AboutLinks t={t} />
         </div>
-        
-        <Copyright t={t} />
       </div>
     </footer>
   );

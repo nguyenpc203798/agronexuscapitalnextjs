@@ -1,10 +1,10 @@
 'use client';
 
 import { memo, useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'framer-motion';  
 import { useLanguage } from '@/context/LanguageContext';
 import { fadeInUp, staggerChildren } from '@/lib/animations';
+import Image from 'next/image';
 
 const CoreValuesSection = memo(() => {
   const { t } = useLanguage();
@@ -19,32 +19,28 @@ const CoreValuesSection = memo(() => {
   });
   
   // Hiệu ứng di chuyển y khi scroll
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
   const coreValues = [
     {
       id: 'commitment',
-      title: 'Cam kết',
-      enTitle: '(Commitment)',
-      description: 'Cam kết mang lại giá trị thực cho nhà đầu tư, đối tác và cộng đồng.'
+      title: t("home.core_values_section.Commitment_title"),
+      description: t("home.core_values_section.Commitment_description")
     },
     {
       id: 'collaboration',
-      title: 'Đồng hành',
-      enTitle: '(Collaboration)',
-      description: 'Đồng hành cùng phát triển bền vững với nhà đầu tư, doanh nghiệp.'
+      title: t("home.core_values_section.Collaboration_title"),
+      description: t("home.core_values_section.Collaboration_description")
     },
     {
       id: 'sustainability',
-      title: 'Bền vững',
-      enTitle: '(Sustainability)',
-      description: 'Cân bằng phát triển kinh doanh, lợi ích nhà đầu tư, doanh nghiệp với bảo vệ môi trường và trách nhiệm xã hội.'
+      title: t("home.core_values_section.Sustainability_title"),
+      description: t("home.core_values_section.Sustainability_description")
     },
     {
       id: 'innovation',
-      title: 'Đổi mới',
-      enTitle: '(Innovation)',
-      description: 'Tiên phong công nghệ xanh, đổi mới giải pháp sáng tạo, nâng cao hiệu quả và chất lượng sản phẩm dịch vụ.'
+      title: t("home.core_values_section.Innovation_title"),
+      description: t("home.core_values_section.Innovation_description")
     }
   ];
 
@@ -54,9 +50,17 @@ const CoreValuesSection = memo(() => {
       className="relative py-16 lg:py-24 overflow-hidden"
     >
       {/* Background với parallax từ Framer Motion */}
-      <div className="absolute inset-0 w-full z-0 h-[130%] -top-[15%]">
-        <motion.div style={{ y }} className="w-full h-full bg-green-800">
-          <div className="absolute inset-0 bg-gradient-to-b from-green-900 to-green-700 opacity-90" />
+      <div className="absolute inset-0 w-full z-0 h-[130%] -top-[45%]">
+        <motion.div style={{ y }} className="w-full h-full">
+          <Image 
+            src="/images/pages/home/CoreValues.jpg"
+            alt="Core Values Background"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            quality={90}
+            priority={false}
+          />
         </motion.div>
       </div>
       
@@ -69,10 +73,10 @@ const CoreValuesSection = memo(() => {
           variants={staggerChildren}
         >
           <motion.h2 
-            className="text-center text-white text-[3rem] mb-[3rem]"
+            className="text-center text-shadow text-white mb-[3rem]"
             variants={fadeInUp}
           >
-            Giá trị cốt lõi
+            {t("home.core_values_section.title")}
           </motion.h2>
           
           <motion.div 
@@ -88,7 +92,7 @@ const CoreValuesSection = memo(() => {
               >
                 <div className="absolute top-[85%] left-1/2 transform -translate-x-1/2 w-[30%] h-[2px] bg-white" />
                 <h4 className="text-3xl text-white mb-4 mt-[4rem] lg:mt-0">
-                  {value.title}<br/>{value.enTitle}
+                  {value.title}
                 </h4>
                 <p className="text-white">
                   {value.description}

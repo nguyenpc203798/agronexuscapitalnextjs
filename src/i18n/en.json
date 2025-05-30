@@ -2,18 +2,13 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "products": "Category",
-    "products_items": {
-      "coffee": "Coffee",
-      "rubber": "Natural Rubber",
-      "tapioca": "Tapioca Starch",
-      "cashew": "Cashew Nuts",
-      "star_anise": "Star Anise",
-      "cinnamon": "Cinnamon",
-      "pepper": "Black Pepper"
-    },
+    "categories": "Categories",
     "news": "News", 
     "contact": "Contact"
+  },
+  "theme_switcher": {
+    "dark_mode": "Enable dark mode",
+    "light_mode": "Enable light mode"
   },
   "home": {
     "slider": {
@@ -29,148 +24,163 @@
       "third_description": "As a strategic bridge between innovative businesses and investors, Agronexus Capital provides capital, technology, and necessary resources to optimize growth performance and create sustainable value for the entire ecosystem.",
       "see_more": "See more"
     },
-    "products_section": {
-      "title": "TANTAI'S BUSINESS PRODUCT LINES",
-      "center_image_alt": "Lush green coffee plantation landscape with mountains and blue sky",
-      "products": {
-        "coffee": {
-          "name": "Coffee",
-          "description": "Coffee is one of Vietnam's key export items. Tantai Company provides the highest quality and most reliable coffee to customers."
-        },
-        "tapioca": {
-          "name": "Tapioca Starch",
-          "description": "Tapioca starch is widely used in the food industry. Tantai Company has been investing heavily in tapioca starch production and is highly regarded by partners for its quality."
-        },
-        "star_anise": {
-          "name": "Star Anise",
-          "description": "Star anise, a popular spice originating from Vietnam and China. Tantai Company produces and exports high-quality star anise to many international markets such as Asia, EU, and the US."
-        },
-        "rubber": {
-          "name": "Natural Rubber",
-          "description": "With a large raw material area, advanced production technology, and a team of experienced experts, Tantai Company provides high-quality rubber products for domestic and international markets."
-        },
-        "cashew": {
-          "name": "Cashew Nuts",
-          "description": "A globally popular food. Tantai Company supplies whole and roasted cashew kernels, ensuring high quality according to International standards."
-        },
-        "cinnamon": {
-          "name": "Cinnamon",
-          "description": "Vietnam is one of the world's leading suppliers of high-quality cinnamon. Tantai Company is a leading producer and exporter of organic cinnamon, aiming to plant 1,000 new hectares annually by 2030."
-        }
-      }
-    },
-    "warehouse_section": {
-      "title": "FACTORY - WAREHOUSE",
-      "image1_alt": "Interior of a large warehouse with forklifts and stacks of pallets",
-      "image2_alt": "Forklift lifting white sacks inside a warehouse with warm lighting",
-      "image3_alt": "Warehouse loading dock with pallets and a truck backed up to the door",
-      "image4_alt": "Two people wearing hardhats discussing inside a warehouse aisle"
-    },
-    "news_section": {
-      "section_label": "News & updates",
-      "heading": "Many opportunities for coffee export growth",
-      "description": "According to the General Department of Customs, from the beginning of 2024 to October 15, Vietnam exported 1.13 million tons of coffee with a turnover of 4.44 billion USD, a decrease of 11.1% in volume but an increase of 39.1% in value compared to the same period in 2023.",
-      "view_more": "View more",
-      "news_items": {
-        "item1": {
-          "date": "January 05, 2025",
-          "title": "Coffee exports for the 2023/2024 crop year exceed $5 billion",
-          "alt": "Close-up of hands holding red coffee cherries with some falling"
-        },
-        "item2": {
-          "date": "January 05, 2025",
-          "title": "Open door for coffee exports in 2024 to conquer new heights",
-          "alt": "Close-up image of roasted coffee beans in a container"
-        },
-        "item3": {
-          "date": "January 05, 2025",
-          "title": "Coffee exports for the 2023/2024 crop year exceed $5 billion",
-          "alt": "Close-up of hands holding red coffee cherries with some falling"
-        },
-        "item4": {
-          "date": "January 05, 2025",
-          "title": "Open door for coffee exports in 2024 to conquer new heights",
-          "alt": "Close-up image of roasted coffee beans in a container"
-        }
-      }
-    }
-  },
-  "about": {
-    "hero": {
-      "title": "About Us",
-      "description": "Tantai Trading is a leading company providing professional business solutions in Vietnam. We are dedicated to helping businesses grow and succeed."
-    },
-    "company_intro": {
-      "title": "Company Introduction",
-      "paragraph1": "Tantai Trading is proud to be a pioneer in the agricultural sector, specializing in investment, production, distribution and export of leading agricultural products in the region. We focus on developing key products such as coffee, pepper, star anise, cinnamon - items that represent the quality and value of Vietnamese agricultural products.",
-      "paragraph2": "With a business philosophy that prioritizes quality, each Tantai Company product is carefully nurtured from cultivation, harvesting to processing and packaging, ensuring international standards. Our network of global customers and partners is a testament to the commitment to quality and trust that the company has built over time.",
-      "paragraph3": "Tantai Company's production system includes a system of modern processing factories in many provinces, combined with a network of purchasing stations spread throughout the provinces. A team of experienced experts and professional management models help us ensure efficient operation, quickly and accurately meeting customer needs in a competitive business environment.",
-      "paragraph4": "We believe that customer satisfaction is the guiding principle for all activities. With the motto \"Quality, Honesty, Happiness,\" Tantai Company not only provides high-quality products but also commits to meeting international standards such as USDA Organic, EU Organic, HACCP, BRCGS, Halal, Kosher, Fairtrade and ISO 22000, ISO 9001 and building sustainable value for the community and the economy.",
-      "image1_alt": "Tantai Company - High quality agricultural products",
-      "image2_alt": "Tantai's agricultural production and processing system"
-    },
-    "vision_mission": {
-      "title": "Vision & Mission",
+    "vision_mission_section": {
       "vision_title": "Vision",
-      "vision_content": "With pioneering aspirations and a sustainable development strategy, Tantai connects the domestic market with international networks, establishing Vietnamese agricultural products as a national brand in the global supply chain.",
+      "vision_description": "With pioneering aspirations and a sustainable development strategy, Agronexus Capital aims to become the leading Green Financial Investment Group in the region with international stature, bringing Vietnamese agricultural brands to the world.",
       "mission_title": "Mission",
-      "mission_content": "Revolutionizing Vietnam's agricultural industry through investment in agricultural warehouse services. Ensuring transparency and standardization from procurement to export, building solid trust with partners. Optimizing operations, reducing costs based on smart warehouse and logistics systems. Elevating Vietnamese agricultural products, bringing coffee and key products to the world market, aligning with the national sustainable agricultural development strategy.",
       "mission_items": {
-        "item1": "Revolutionizing Vietnam's agricultural industry through investment in agricultural warehouse services",
-        "item2": "Ensuring transparency and standardization from procurement to export, building solid trust with partners",
-        "item3": "Optimizing operations, reducing costs based on smart warehouse and logistics systems",
-        "item4": "Elevating Vietnamese agricultural products, bringing coffee and key products to the world market, aligning with the national sustainable agricultural development strategy"
+        "item1_strong": "Revolutionize Vietnam's agriculture sector ",
+        "item1": "through investment in comprehensive agricultural service hubs",
+        "item2_strong": "Prevent resource wastage, enhance land use efficiency",
+        "item2": "by leveraging high-tech investment solutions.",
+        "item3_strong": "Establish a platform to help businesses optimize costs",
+        "item3": "by investing in the development of smart logistics and warehousing systems.",
+        "item4_strong": "Build Agronexus ecosystem brands to achieve international stature",
+        "item4": "to align with the strategic direction of the Party and State, elevating the national brand.",
+        "item5_strong": "Contribute to realizing Vietnam's Net Zero 2050 goal",
+        "item5": "through green investment strategies and carbon-neutral development."
       }
     },
-    "core_values": {
+    "core_values_section": {
       "title": "Core Values",
-      "description": "Values that guide all our activities and decisions",
-      "values": {
-        "quality": {
-          "title": "Quality & Reputation",
-          "description": "Ensuring agricultural products (coffee, rubber, and other commodities) meet international standards, building reputation through transparent processes and reliable trade."
-        },
-        "partnership": {
-          "title": "Sustainable Partnership",
-          "description": "Establishing long-term relationships with farmers, export businesses, and agricultural organizations, promoting sustainable procurement chains, ensuring stable value for the industry."
-        },
-        "innovation": {
-          "title": "Innovation & Creativity",
-          "description": "Applying digital technologies (IoT, AI, Blockchain...) to optimize management, logistics, and agricultural product quality."
-        },
-        "responsibility": {
-          "title": "Community Responsibility",
-          "description": "Supporting farmers with capital, farming techniques, technology, and ensuring stable output; providing comprehensive services from procurement to export; focusing on deep processing to increase product value."
-        }
+      "Commitment_title": "Commitment",
+      "Commitment_description": "Committed to delivering real value to investors, partners and the community.",
+      "Collaboration_title": "Collaboration",
+      "Collaboration_description": "Partnering for sustainable development with investors and businesses.",
+      "Sustainability_title": "Sustainability",
+      "Sustainability_description": "Balancing business development, investor and business benefits with environmental protection and social responsibility.",
+      "Innovation_title": "Innovation",
+      "Innovation_description": "Pioneering in green technology, innovating creative solutions, improving efficiency and quality of products and services."
+    },
+    "group_size_section": {
+      "title": "Group Size",
+      "counter_items": {
+        "investment_sectors": "Investment sectors",
+        "investment_plans": "Investment plans",
+        "investment_projects": "Investment projects",
+        "factories_warehouses": "Factories / warehouses",
+        "sales_points": "Sales points",
+        "staff": "Personnel"
       }
     },
-    "cta": {
-      "title": "Partner With Tantai",
-      "description": "Become a partner or customer of Tantai to grow together and achieve sustainable value.",
-      "button": "Contact Us Now"
-    }
-  },
-  "theme_switcher": {
-    "dark_mode": "Enable dark mode",
-    "light_mode": "Enable light mode"
-  },
-  "footer": {
-    "link": "Links",
-    "slogan": "Providing professional agricultural products to customers of all sizes.",
-    "copyright": "© 2025 Tantai Trading. All rights reserved.",
-    "links": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms of Service"
+    "investment_fields_section": {
+      "title": "Investment Sectors",
+      "fields": {
+        "agriculture": "Agriculture",
+        "energy": "Energy",
+        "minerals": "Minerals",
+        "aquaculture": "Aquaculture",
+        "logistics": "Ports & Logistics"
+      }
     },
-    "contact_info": {
-      "head_office": "Head Office: Khu phố 2, Thị trấn Tân Nghĩa, Huyện Hàm Tâm, Tỉnh Bình Thuận, Việt Nam",
-      "phone": "0899.565.868",
-      "email": "info@tantaitrading.com",
-      "response": "24/7 response via phone and email."
-    },
-    "representative_office": {
-      "title": "Representative Office",
-      "content": "9-11 Tôn Đức Thắng, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam"
+    "industry_section": {
+      "section_title": "Industry Details",
+      "agriculture": {
+        "title": "Agriculture",
+        "investment_direction": "Investment Direction",
+        "investment_content": "Applying high technology from cultivation to deep processing aimed at the global market.",
+        "sub_industries": "Sub-industries",
+        "sub_industries_list": {
+          "dry_grain": "Dry grain crops",
+          "processed": "Processed agricultural products (Starch, rubber)",
+          "supplies": "Agricultural supplies",
+          "fresh": "Fresh produce",
+          "forest": "Forest and medicinal resources"
+        },
+        "agriculture_images": {
+          "dry_grain": "Dry Grain",
+          "starch": "Starch",
+          "rubber": "Rubber",
+          "fresh": "Fresh Produce",
+          "supplies": "Agricultural Supplies",
+          "forest": "Forest & Resources"
+        },
+        "investment_projects": "Investment Projects",
+        "smart_warehouse": {
+          "title": "Smart Agricultural Warehouse",
+          "description": "Smart warehouses are storage systems that use advanced technologies such as automation, AI, and IoT to optimize management, distribution, and tracking of goods. Smart warehouses can automate the process of receiving, shipping, and inspecting goods, helping to minimize errors and enhance operational efficiency while reducing costs and storage time."
+        },
+        "high_tech_farm": {
+          "title": "High-tech Farm Chain",
+          "description": "Developing a chain of high-tech farms across Vietnam, specializing in high-value vegetables and fruits for both export and domestic markets."
+        },
+        "reference_image": "Reference image"
+      },
+      "energy": {
+        "title": "Energy",
+        "investment_direction": "Investment Direction",
+        "investment_content": "Vietnam is transitioning from traditional energy sources to solar power, wind power, and biomass, ensuring sustainable energy sources, reducing emissions, and promoting green growth.",
+        "sub_industries": "Sub-industries",
+        "sub_industries_list": {
+          "petroleum": "Petroleum & Charging Stations",
+          "renewable": "Renewable Energy"
+        },
+        "energy_images": {
+          "petroleum": "Petroleum",
+          "charging": "Charging Station",
+          "wind": "Wind Power",
+          "solar": "Solar Power",
+          "biomass": "Biomass Energy"
+        },
+        "investment_projects": "Investment Projects",
+        "project1": {
+          "description": "A chain of energy stations combined with rest stops and logistics in strategic locations, integrating utility services, energy, accommodation, F&B, and mini eco-tourism areas, aiming to become a model transportation-commercial center in the southern coastal region."
+        },
+        "project2": {
+          "description": "The energy station chain combined with rest stops and logistics is a project integrating gas stations, electric charging stations, warehousing, utility services, and vehicle maintenance areas, aiming to become a key trade - logistics - energy - consumption connection point in the southwestern border region."
+        },
+        "reference_image": "Reference image"
+      },
+      "minerals": {
+        "title": "Minerals",
+        "investment_direction": "Investment Direction",
+        "investment_content": "The minerals industry (tiles, building stones, sand, metals, etc.) has great potential thanks to abundant reserves and high quality in Vietnam. The application of high technology in mining and processing helps increase resource value, optimize efficiency, and reduce environmental impact.",
+        "sub_industries": "Sub-industries",
+        "minerals_images": {
+          "stone": "Building Stone",
+          "sand": "Construction Sand",
+          "tile": "Tiles"
+        }
+      },
+      "aquaculture": {
+        "title": "Aquaculture",
+        "investment_direction": "Investment Direction",
+        "investment_content": "The aquaculture sector is a strategic export industry of Vietnam, with great potential from natural advantages. The application of high technology in farming and processing is opening up a sustainable development direction, enhancing value and global competitiveness.",
+        "sub_industries": "Sub-industries",
+        "aquaculture_images": {
+          "seafood1": "Seafood 1",
+          "seafood2": "Seafood 2",
+          "seafood3": "Seafood 3"
+        }
+      },
+      "logistics": {
+        "title": "Warehouse - Port - Logistics",
+        "investment_direction": "Investment Direction",
+        "investment_content": "The Warehouse - Port - Logistics industry plays a strategic logistics role for the entire agricultural - industrial - import-export supply chain.",
+        "services_list": {
+          "port": "International Port - Domestic Port - Dry Port Services.",
+          "warehouse": "Warehouse and Distribution Center Services.",
+          "transport": "Transportation Services."
+        },
+        "investment_projects": "Investment Projects",
+        "port_services": {
+          "title": "International Port - Domestic Port - Dry Port Services",
+          "description": "Connecting the green supply chain from international ports to ICDs (inland container depots) helps reduce logistics costs and increase resource efficiency."
+        },
+        "warehouse_services": {
+          "title": "Warehouse and Distribution Center Services",
+          "description": "Smart warehouse system integrating cold chain technology and product origin management."
+        },
+        "transport_services": {
+          "title": "Transportation Services",
+          "description": "Transportation connecting the supply chain from processing centers such as high-tech farm chains and integrated rest stop chains."
+        },
+        "reference_image": "Reference image"
+      },
+      "news_section": {
+        "title": "News",
+        "more_news": "View more"
+      }
     }
   },
   "news": {
@@ -272,115 +282,29 @@
       "description": "Our representative office in Ho Chi Minh City"
     }
   },
-  "category": {
-    "title": "Our Products Categories",
-    "subtitle": "Tantai Trading provides high-quality agricultural products that meet international standards",
-    "products": {
-      "coffee": {
-        "title": "COFFEE",
-        "subtitle": "Premium Quality Coffee",
-        "description": {
-          "paragraph1": "Coffee has long been a favorite beverage for millions of people around the world. Among them, the two most popular types of coffee, Robusta and Arabica, are famous for their distinctive flavor and superior quality. With geographical advantages, favorable weather conditions, and competitive production costs, Vietnam has established itself as one of the world's leading coffee-producing countries.",
-          "paragraph2": "Tantai Company is proud to contribute to the development of Vietnam's coffee industry with a modern processing plant system located right in the raw material area. Notably, we are investing in an instant coffee factory which is one of only three factories in Vietnam investing in advanced freeze-drying technology, meeting international standards. We supply various types of green unroasted Robusta and Arabica coffee, including dry-processed Robusta and wet-processed Arabica, dry-processed and spray-dried roasted coffee (light, medium, dark roast), freeze-dried instant coffee, and coffee extract.",
-          "paragraph3": "With a commitment to quality, continuous innovation, and customer focus, Tantai Company always strives to be a reliable partner, delivering high-quality coffee products, contributing to elevating the value of Vietnamese agricultural products in the international market."
-        },
-        "image_alts": {
-          "alt1": "High-quality Robusta and Arabica coffee beans",
-          "alt2": "Coffee harvesting process at Tantai plantation",
-          "alt3": "Tantai's modern coffee processing factory",
-          "alt4": "Tantai coffee meeting international standards"
-        }
-      },
-      "rubber": {
-        "title": "NATURAL RUBBER",
-        "subtitle": "Premium Natural Rubber Products",
-        "description": {
-          "paragraph1": "Vietnam is currently the third largest rubber producer in the world with over 940,000 hectares of rubber trees. The country's natural rubber production accounts for about 8.3% of global production, with a total output of over 1.2 million tons annually. This makes Vietnam one of the largest rubber exporters in the world market.",
-          "paragraph2": "Tantai Company specializes in providing standard SVR CV, SVR L, and SVR 3L natural rubber that meets international quality standards. Our rubber products are recognized for their high plasticity, good elongation, and outstanding stretch properties, making them suitable for various industrial applications.",
-          "paragraph3": "Through a strict quality control process from plantation to processing, we ensure that our natural rubber products meet the highest standards of quality and consistency. Our modern processing facilities and experienced team allow us to maintain the superior quality of our products and meet the diverse needs of our customers in both domestic and international markets."
-        },
-        "image_alts": {
-          "alt1": "Natural rubber processing at Tantai factory",
-          "alt2": "Premium quality rubber sheets produced by Tantai",
-          "alt3": "Quality control of rubber products at Tantai",
-          "alt4": "Tantai's rubber products ready for export"
-        }
-      },
-      "tapioca": {
-        "title": "TAPIOCA STARCH",
-        "subtitle": "High-Quality Tapioca Starch Products",
-        "description": {
-          "paragraph1": "Tapioca starch, derived from cassava roots, is a versatile ingredient widely used in food processing, textiles, pharmaceuticals, and other industries. Vietnam has become one of the world's major tapioca starch producers, with high-quality products that meet international standards.",
-          "paragraph2": "Tantai Company specializes in the production and export of premium tapioca starch. Our products are known for their high purity, excellent viscosity, and consistent quality. We process our tapioca starch using advanced technology, ensuring that it meets the strict requirements of international markets.",
-          "paragraph3": "Our tapioca starch is produced under stringent quality control measures from raw material selection to final packaging. We offer various grades of tapioca starch tailored to meet different industrial needs. Whether for food applications, textiles, paper, or industrial uses, our tapioca starch products provide reliable performance and superior quality."
-        },
-        "image_alts": {
-          "alt1": "Tapioca starch production at Tantai facility",
-          "alt2": "High-purity tapioca starch powder",
-          "alt3": "Quality testing of tapioca starch products",
-          "alt4": "Tapioca starch packaging for export markets"
-        }
-      },
-      "cashew": {
-        "title": "CASHEW NUTS",
-        "subtitle": "Premium Cashew Nuts Products",
-        "description": {
-          "paragraph1": "Cashew nuts are among the most nutritious and versatile nuts, prized globally for their delicious taste and numerous health benefits. Vietnam has established itself as the world's leading cashew nut exporter, known for producing high-quality cashews that meet international standards.",
-          "paragraph2": "Tantai Company specializes in the processing and export of premium cashew nuts. Our products range from whole kernels (W180, W210, W240, W320, W450) to broken kernels (LBW, SBW, BB, SB) and scorched kernels (WS), all meeting strict international quality standards. We employ advanced processing technologies and rigorous quality control measures to ensure that our cashew nuts maintain their natural flavor, nutritional value, and appealing appearance.",
-          "paragraph3": "Our cashew processing facilities comply with international food safety standards, including HACCP, ISO, BRC, and FDA regulations. We carefully select our raw materials from reliable sources and implement strict quality control throughout the production process, from raw nut processing to final packaging, ensuring that our customers receive consistently high-quality cashew products."
-        },
-        "image_alts": {
-          "alt1": "Premium cashew nuts processing at Tantai facility",
-          "alt2": "Sorted and graded cashew kernels in production",
-          "alt3": "Quality control inspection of cashew kernels",
-          "alt4": "Vacuum-packed cashew nuts ready for export"
-        }
-      },
-      "star_anise": {
-        "title": "STAR ANISE",
-        "subtitle": "Premium Star Anise Products",
-        "description": {
-          "paragraph1": "Star anise, known for its distinctive star shape and aromatic flavor, is a highly valued spice used in culinary applications and traditional medicine worldwide. Vietnam, particularly in the northern mountainous regions, produces some of the world's finest star anise with high essential oil content and superior quality.",
-          "paragraph2": "Tantai Company specializes in the cultivation, processing, and export of premium star anise. Our products include whole star anise, broken star anise, star anise powder, and star anise oil. We carefully source our star anise from the best growing regions, ensuring that our products have the optimal flavor profile, aroma, and essential oil content that our customers demand.",
-          "paragraph3": "Our star anise undergoes rigorous quality control processes, from harvesting and sun-drying to sorting, grading, and packaging. We maintain strict compliance with international food safety standards, including HACCP, ISO, and organic certifications. Through sustainable farming practices and modern processing techniques, we deliver star anise products that consistently meet the highest standards of quality and purity."
-        },
-        "image_alts": {
-          "alt1": "Star anise cultivation in Vietnam's northern mountainous regions",
-          "alt2": "Star anise harvesting and processing at Tantai",
-          "alt3": "Various grades of star anise products",
-          "alt4": "Quality testing of star anise for essential oil content"
-        }
-      },
-      "cinnamon": {
-        "title": "CINNAMON",
-        "subtitle": "Premium Cinnamon Products",
-        "description": {
-          "paragraph1": "Cinnamon, one of the world's oldest spices, has been valued for its unique aroma, flavor, and medicinal properties for thousands of years. Vietnamese cinnamon (Cinnamomum loureiroi), also known as Saigon cinnamon or Cassia, is highly regarded for its superior quality, characterized by its high essential oil content, particularly cinnamaldehyde, which gives it a more intense flavor and aroma compared to other varieties.",
-          "paragraph2": "Tantai Company specializes in the sustainable cultivation, processing, and export of premium Vietnamese cinnamon. Our product range includes cinnamon quills (sticks), broken cinnamon, cinnamon chips, cinnamon powder, and cinnamon oil. We meticulously source our cinnamon from the best growing regions in Vietnam, where the optimal climate and soil conditions contribute to the development of cinnamon with exceptional quality and high essential oil content.",
-          "paragraph3": "Our cinnamon undergoes a comprehensive quality control process, from careful harvesting and natural drying to sorting, grading, and proper packaging. We adhere to international food safety standards, including HACCP, ISO, and organic certifications. Through our commitment to sustainability and quality, we provide cinnamon products that consistently satisfy the discerning requirements of our global customers."
-        },
-        "image_alts": {
-          "alt1": "Cinnamon cultivation in Vietnam's highlands",
-          "alt2": "Traditional cinnamon harvesting and processing",
-          "alt3": "Various grades of cinnamon products from Tantai",
-          "alt4": "Quality testing of cinnamon for essential oil content"
-        }
-      },
-      "pepper": {
-        "title": "BLACK PEPPER",
-        "subtitle": "Premium Black Pepper Products",
-        "description": {
-          "paragraph1": "Black pepper, often referred to as the 'King of Spices,' has been one of the world's most valuable and traded spices for centuries. Vietnam has emerged as the world's largest producer and exporter of black pepper, known for its high-quality peppercorns with strong aroma, pungency, and distinctive flavor profile.",
-          "paragraph2": "Tantai Company specializes in the cultivation, processing, and export of premium Vietnamese black pepper. Our product range includes black pepper, white pepper, green pepper, red pepper, and ground pepper in various grades to meet different market requirements. We source our pepper from select growing regions in Vietnam, where ideal climate conditions and fertile soil contribute to the development of peppercorns with optimal essential oil content and flavor characteristics.",
-          "paragraph3": "Our pepper products undergo stringent quality control procedures, from careful harvesting and sun-drying to cleaning, sorting, grading, and sterilization. We implement advanced processing technologies and strict hygiene practices to ensure that our pepper is free from contaminants and meets international food safety standards, including HACCP, ISO, and organic certifications. Through our commitment to quality and sustainability, we deliver pepper products that consistently satisfy the high expectations of our customers worldwide."
-        },
-        "image_alts": {
-          "alt1": "Black pepper cultivation at Tantai's partner farms",
-          "alt2": "Traditional pepper harvesting and processing",
-          "alt3": "Various grades of pepper products from Tantai",
-          "alt4": "Quality testing of pepper for essential oil content"
-        }
-      }
+  "footer": {
+    "address": "Address",
+    "address_info": {
+      "building": "Lim Tower Building",
+      "street": "9-11 Tôn Đức Thắng",
+      "ward": "Phường Bến Nghé",
+      "district": "Quận 1",
+      "city": "Tp Hồ Chí Minh"
+    },
+    "contact": "Contact",
+    "contact_info": {
+      "phone": "(+84) 398 388 109",
+      "email": "info@agronexuscapital.com"
+    },
+    "copyright": "Copyright © 2025",
+    "copyright_description": " AgroNexus Capital",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "categories": "Investment Categories",
+      "sustainability": "Sustainability",
+      "news": "News",
+      "contact": "Contact"
     }
   }
 } 

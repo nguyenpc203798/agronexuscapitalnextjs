@@ -10,7 +10,7 @@
     --card-foreground: #0f172a;
     --popover: #ffffff;
     --popover-foreground: #0f172a;
-    --primary: #117f40;
+    --primary: #1e6c39;
     --primary-foreground: #fafafa;
     --secondary: #f5f5f5;
     --secondary-foreground: #171717;
@@ -31,7 +31,7 @@
     --chart-5: #e56b3c;
     --green: #15803d;
     --green-foreground: #fafafa;
-    --blur-bg: rgb(255 255 255 / 0.3);
+    --blur-bg: rgba(173, 173, 173, 0.3);
   }
  
   .dark {
@@ -41,7 +41,7 @@
     --card-foreground: #fafafa;
     --popover: #0f172a;
     --popover-foreground: #fafafa;
-    --primary: #09c959;
+    --primary: #258547;
     --primary-foreground: #171717;
     --secondary: #262626;
     --secondary-foreground: #fafafa;
@@ -75,7 +75,7 @@
   }
 
   h1 {
-    @apply text-4xl font-bold md:text-5xl;
+    @apply text-4xl font-bold md:text-6xl;
   }
 
   h2 {
@@ -87,7 +87,7 @@
   }
 
   h4 {
-    @apply text-xl font-bold;
+    @apply text-muted-foreground  text-xl font-bold;
   }
 
   h5 {
@@ -99,6 +99,9 @@
   }
 
   p {
+    @apply text-muted-foreground text-justify;
+  }
+  ul {
     @apply text-muted-foreground text-justify;
   }
 }
@@ -154,4 +157,19 @@ html.lenis {
 
 .animate-fade-in {
   animation: fade-in 0.7s ease-out forwards;
+}
+
+/* Tin tức styles */
+details summary {
+  cursor: pointer;
+  color: #1e6c39;
+  font-weight: 500;
+}
+
+details summary:hover {
+  text-decoration: underline;
+}
+
+details[open] summary {
+  margin-bottom: 10px;
 } 

@@ -1,5 +1,5 @@
-import { useState, useEffect, useMemo } from 'react';
-import newsData from '@/data/news.json';
+import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useLanguage } from '@/context/LanguageContext';
 
 export type NewsItem = {
   id: number;
@@ -28,11 +28,62 @@ export const useNewsFilters = ({
   initialSearchTerm = '',
   itemsPerPage = 4
 }: UseNewsFiltersProps = {}) => {
+  const { currentLocale } = useLanguage();
+  const [newsData, setNewsData] = useState<NewsItem[]>([]);
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [selectedTag, setSelectedTag] = useState(initialTag);
   const [currentPage, setCurrentPage] = useState(1);
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(initialSearchTerm);
+  const [isLoading, setIsLoading] = useState(true);
+  const [prevLocale, setPrevLocale] = useState(currentLocale);
+
+  // Theo dõi sự thay đổi của các prop ban đầu từ URL
+  useEffect(() => {
+    setSelectedCategory(initialCategory);
+    setSelectedTag(initialTag);
+    setSearchTerm(initialSearchTerm);
+    setDebouncedSearchTerm(initialSearchTerm);
+  }, [initialCategory, initialTag, initialSearchTerm]);
+
+  // Tải dữ liệu tin tức dựa vào ngôn ngữ
+  useEffect(() => {
+    const loadNews = async () => {
+      setIsLoading(true);
+      try {
+        // Tạo tham số cacheBuster để tránh caching
+        const cacheBuster = new Date().getTime();
+        let response;
+        
+        if (currentLocale === 'en') {
+          console.log("Đang tải dữ liệu tin tức tiếng Anh...");
+          response = await fetch(`/data/news_en.json?v=${cacheBuster}`);
+        } else {
+          console.log("Đang tải dữ liệu tin tức tiếng Việt...");
+          response = await fetch(`/data/news_vi.json?v=${cacheBuster}`);
+        }
+        
+        const data = await response.json();
+        console.log(`Đã tải tin tức cho ngôn ngữ: ${currentLocale}`, data);
+        setNewsData(data);
+
+        // Phát hiện sự thay đổi ngôn ngữ để reset các bộ lọc nếu cần
+        if (currentLocale !== prevLocale) {
+          console.log(`Ngôn ngữ thay đổi từ ${prevLocale} sang ${currentLocale}`);
+          setPrevLocale(currentLocale);
+          // Reset lại trang về 1 khi thay đổi ngôn ngữ
+          setCurrentPage(1);
+        }
+      } catch (error) {
+        console.error('Lỗi khi tải dữ liệu tin tức:', error);
+        setNewsData([]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadNews();
+  }, [currentLocale, prevLocale]);
 
   // Xử lý debounce cho searchTerm để tránh tìm kiếm liên tục khi gõ
   useEffect(() => {
@@ -65,7 +116,7 @@ export const useNewsFilters = ({
 
       return matchesSearch && matchesCategory && matchesTag;
     });
-  }, [debouncedSearchTerm, selectedCategory, selectedTag]);
+  }, [debouncedSearchTerm, selectedCategory, selectedTag, newsData]);
 
   // Tính toán phân trang
   const totalItems = filteredNews.length;
@@ -79,7 +130,7 @@ export const useNewsFilters = ({
   }, [filteredNews, currentPage, itemsPerPage]);
 
   // Xử lý thay đổi trang
-  const handlePageChange = (page: number) => {
+  const handlePageChange = useCallback((page: number) => {
     setCurrentPage(page);
     // Đảm bảo cuộn sau khi state đã được cập nhật và DOM đã render
     setTimeout(() => {
@@ -88,25 +139,48 @@ export const useNewsFilters = ({
         window.scrollTo({ top: newsListElement.offsetTop - 100, behavior: 'smooth' });
       }
     }, 50);
-  };
+  }, []);
 
   // Xử lý khi chọn danh mục 
-  const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
-    setSelectedTag(''); // Reset tag khi chọn category mới
+  const handleCategoryChange = useCallback((category: string) => {
+    if (category === selectedCategory) {
+      setSelectedCategory('');
+    } else {
+      setSelectedCategory(category);
+      setSelectedTag(''); // Reset tag khi chọn category mới
+    }
     setCurrentPage(1); // Reset trang
-  };
+  }, [selectedCategory]);
 
   // Xử lý khi chọn tag
-  const handleTagChange = (tag: string) => {
-    setSelectedTag(tag);
+  const handleTagChange = useCallback((tag: string) => {
+    if (tag === selectedTag) {
+      setSelectedTag('');
+    } else {
+      setSelectedTag(tag);
+      setSelectedCategory(''); // Reset category khi chọn tag mới  
+    }
     setCurrentPage(1); // Reset trang
-  };
+  }, [selectedTag]);
 
   // Xử lý khi tìm kiếm
-  const handleSearch = (term: string) => {
+  const handleSearch = useCallback((term: string) => {
     setSearchTerm(term);
-  };
+    if (term) {
+      setSelectedCategory(''); // Reset category khi tìm kiếm
+      setSelectedTag(''); // Reset tag khi tìm kiếm
+    }
+    setCurrentPage(1); // Reset trang
+  }, []);
+
+  // Xử lý reset tất cả các bộ lọc
+  const resetFilters = useCallback(() => {
+    setSelectedCategory('');
+    setSelectedTag('');
+    setSearchTerm('');
+    setDebouncedSearchTerm('');
+    setCurrentPage(1);
+  }, []);
 
   // Lấy danh sách các danh mục duy nhất
   const categories = useMemo(() => {
@@ -123,7 +197,7 @@ export const useNewsFilters = ({
         slug: category // Sử dụng trực tiếp category làm slug vì đã ở định dạng chuẩn
       };
     });
-  }, []);
+  }, [newsData]);
 
   // Lấy danh sách các tag duy nhất
   const tags = useMemo(() => {
@@ -132,7 +206,7 @@ export const useNewsFilters = ({
       news.tags.forEach(tag => tagSet.add(tag));
     });
     return Array.from(tagSet);
-  }, []);
+  }, [newsData]);
 
   // Lấy tin tức mới nhất
   const latestNews = useMemo(() => {
@@ -143,7 +217,7 @@ export const useNewsFilters = ({
         return dateB.getTime() - dateA.getTime();
       })
       .slice(0, 3);
-  }, []);
+  }, [newsData]);
 
   return {
     searchTerm,
@@ -160,6 +234,8 @@ export const useNewsFilters = ({
     handleCategoryChange,
     handleTagChange,
     handlePageChange,
-    setCurrentPage,
+    resetFilters,
+    isLoading,
+    setCurrentPage
   };
 }; 

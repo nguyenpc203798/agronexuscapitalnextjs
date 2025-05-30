@@ -15,12 +15,12 @@ const VisionMissionSection = memo(() => {
   };
 
   return (
-    <section
-      className="relative overflow-hidden container mb-[4rem] rounded-[3rem]"
+    <section 
+      className="relative overflow-hidden"
     >
       {/* Background với Next.js Image */}
       <div className="absolute inset-0 w-full z-0 h-full">
-        <Image
+        <Image 
           src="/images/pages/home/VisionMission.jpg"
           alt="Vision and Mission Background"
           fill
@@ -33,27 +33,27 @@ const VisionMissionSection = memo(() => {
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4">
-        <div
+        <div 
           className="p-[2rem] lg:p-[3rem] h-[55rem] md:h-[40rem] lg:h-[50rem]  relative rounded-[3rem] w-full"
         >
-          <motion.div
+          <motion.div 
             className="h-full w-full lg:w-[50%] flex flex-col justify-end space-y-4"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={staggerChildren}
           >
-            <motion.div
+            <motion.div 
               className="flex justify-center lg:justify-start space-x-8"
               variants={fadeInUp}
             >
-              <button
+              <button 
                 onClick={() => handleTabChange('vision')}
                 className={`backdrop-blur-sm bg-black bg-opacity-50 px-10 py-4 text-[14px] md:text-[18px] lg:text-[22px] font-bold rounded-full hover:bg-white hover:text-black transition-all duration-700 ${activeTab === 'vision' ? 'bg-white text-black' : 'text-white'}`}
               >
                 {t("home.vision_mission_section.vision_title")}
               </button>
-              <button
+              <button 
                 onClick={() => handleTabChange('mission')}
                 className={`backdrop-blur-sm bg-black bg-opacity-50 px-10 py-4 text-[14px] md:text-[18px] lg:text-[22px] font-bold rounded-full hover:bg-white hover:text-black transition-all duration-700 ${activeTab === 'mission' ? 'bg-white text-black' : 'text-white'}`}
               >

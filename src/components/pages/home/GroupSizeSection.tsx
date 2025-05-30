@@ -26,15 +26,19 @@ const CounterItem = ({ number, label, duration = 2000, hasPlusSign = false, dela
     const totalDuration = duration;
     const incrementTime = totalDuration / end;
     
-    const timer = setInterval(() => {
-      start += 1;
-      setCount(start);
+    const timeout = setTimeout(() => {
+      const timer = setInterval(() => {
+        start += 1;
+        setCount(start);
+        
+        if (start >= end) clearInterval(timer);
+      }, incrementTime);
       
-      if (start >= end) clearInterval(timer);
-    }, incrementTime);
+      return () => clearInterval(timer);
+    }, delay);
     
-    return () => clearInterval(timer);
-  }, [number, duration, isInView]);
+    return () => clearTimeout(timeout);
+  }, [number, duration, isInView, delay]);
   
   // Format number to always show 2 digits (e.g., 04, 07)
   const formattedNumber = count < 10 ? `0${count}` : count.toString();
@@ -45,15 +49,15 @@ const CounterItem = ({ number, label, duration = 2000, hasPlusSign = false, dela
       variants={fadeInUp}
       onViewportEnter={() => setIsInView(true)}
     >
-      <div className="flex flex-grow">
+      <div className="flex flex-grow">  
         <p 
           ref={counterRef}
-          className="text-[7rem] md:text-[9rem] font-bold text-[#1e6c39]"
+          className="text-[3rem] md:text-[5rem] lg:text-[7rem] font-bold text-primary font-['Georgia',_serif]"
         >
           {formattedNumber}
         </p>
         {hasPlusSign && (
-          <p className="text-[7rem] md:text-[9rem] font-bold text-[#1e6c39]">+</p>
+          <p className="text-[3rem] lg:text-[7rem] font-bold text-primary font-['Georgia',_serif]">+</p>
         )}
       </div>
       <hr className="my-4 border-t border-gray-300" />
@@ -66,12 +70,42 @@ const GroupSizeSection = memo(() => {
   const { t } = useLanguage();
   
   const counterItems = [
-    { number: 4, label: "Ngành hàng đầu tư", hasPlusSign: false, delay: 0 },
-    { number: 7, label: "Đề án đầu tư", hasPlusSign: false, delay: 200 },
-    { number: 50, label: "Dự án đầu tư", hasPlusSign: true, delay: 400 },
-    { number: 8, label: "Nhà máy / kho", hasPlusSign: false, delay: 600 },
-    { number: 60, label: "Hệ thống điểm bán", hasPlusSign: false, delay: 800 },
-    { number: 250, label: "Đội ngũ nhân sự", hasPlusSign: true, delay: 1000 }
+    { 
+      number: 4, 
+      label: t("home.group_size_section.counter_items.investment_sectors"), 
+      hasPlusSign: false, 
+      delay: 0 
+    },
+    { 
+      number: 7, 
+      label: t("home.group_size_section.counter_items.investment_plans"), 
+      hasPlusSign: false, 
+      delay: 200 
+    },
+    { 
+      number: 50, 
+      label: t("home.group_size_section.counter_items.investment_projects"), 
+      hasPlusSign: true, 
+      delay: 400 
+    },
+    { 
+      number: 8, 
+      label: t("home.group_size_section.counter_items.factories_warehouses"), 
+      hasPlusSign: false, 
+      delay: 600 
+    },
+    { 
+      number: 60, 
+      label: t("home.group_size_section.counter_items.sales_points"), 
+      hasPlusSign: false, 
+      delay: 800 
+    },
+    { 
+      number: 250, 
+      label: t("home.group_size_section.counter_items.staff"), 
+      hasPlusSign: true, 
+      delay: 1000 
+    }
   ];
 
   return (
@@ -87,7 +121,7 @@ const GroupSizeSection = memo(() => {
           className="text-center mb-12"
           variants={fadeInUp}
         >
-          <h2 className="text-[3rem]">Quy mô tập đoàn</h2>
+          <h2>{t("home.group_size_section.title")}</h2>
         </motion.div>
         
         <motion.div 

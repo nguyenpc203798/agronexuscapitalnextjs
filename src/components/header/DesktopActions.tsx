@@ -12,7 +12,7 @@ const DesktopActions = memo(({ t }: { t: (key: string) => string }) => {
       <Link href="/contact">
         <Button 
           size="sm" 
-          className="ml-4"
+          className="ml-4 bg-transparent"
         >
           {t("nav.contact")}
         </Button>
@@ -23,4 +23,4 @@ const DesktopActions = memo(({ t }: { t: (key: string) => string }) => {
 
 DesktopActions.displayName = "DesktopActions";
 
-export default DesktopActions; 
+export default DesktopActions;  
