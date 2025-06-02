@@ -75,6 +75,17 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+        boxShadow: {
+            'sm': '0 1px 2px var(--shadow-light)',
+            DEFAULT: '0 1px 3px var(--shadow-light), 0 1px 2px var(--shadow-medium)',
+            'md': '0 4px 6px var(--shadow-light), 0 2px 4px var(--shadow-medium)',
+            'lg': '0 10px 15px var(--shadow-light), 0 4px 6px var(--shadow-medium)',
+            'xl': '0 20px 25px var(--shadow-light), 0 8px 10px var(--shadow-medium)',
+            '2xl': '0 25px 50px var(--shadow-dark)',
+            'inner': 'inset 0 2px 4px var(--shadow-light)',
+            'custom-card': '5px 5px 15px var(--shadow-medium)',
+            'none': 'none',
+        },
   		keyframes: {
   			'accordion-down': {
   				from: {

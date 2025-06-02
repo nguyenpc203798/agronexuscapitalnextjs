@@ -4,7 +4,8 @@
     "about": "Giới Thiệu",
     "categories": "Ngành Hàng Đầu Tư",
     "news": "Tin Tức",
-    "contact": "Liên Hệ"
+    "contact": "Liên Hệ",
+    "esg": "Phát Triển Bền Vững"
   },
   "theme_switcher": {
     "dark_mode": "Bật chế độ tối",
@@ -182,8 +183,99 @@
       }
     }
   },
+  "esg": {
+    "title": "Phát Triển Bền Vững",
+    "main_heading_top": " Tại Agronexus Capital",
+    "main_heading_bottom": "Chúng tôi thúc đẩy sự kết nối và",
+    "main_heading_bottom_green": " phát triển bền vững",
+    "intro_description": "Agro Nexus Capital hướng đến việc kiến tạo giá trị bền vững thông qua các dự án đầu tư đáp ứng tiêu chí ESG (Môi trường, Xã hội, Quản trị). Với sứ mệnh \"xanh hóa\" chuỗi cung ứng, chúng tôi kết nối vốn, công nghệ, trí tuệ nhằm thúc đẩy canh tác hữu cơ, giảm phát thải, bảo vệ tài nguyên và quản trị minh bạch, góp phần tối ưu hóa giá trị cho nhà đầu tư và cộng đồng.",
+    "sectors": {
+      "title": "Tiêu chí đầu tư phát triển bền vững",
+      "agriculture": "Nông sản",
+      "energy": "Năng lượng",
+      "minerals": "Khoáng sản",
+      "aquaculture": "Thủy sản"
+    },
+    "criteria": {
+      "environment": "Môi trường",
+      "social": "Xã hội",
+      "governance": "Quản trị"
+    },
+    "agriculture": {
+      "environment": {
+        "title": "Môi trường",
+        "item1": "Canh tác hữu cơ - công nghệ cao",
+        "item2": "Tiết kiệm nước",
+        "item3": "Không sử dụng hóa chất độc hại",
+        "item4": "Trồng rừng sản xuất"
+      },
+      "social": {
+        "title": "Xã hội",
+        "item1": "Liên kết vùng trồng theo hợp đồng bao tiêu",
+        "item2": "Tạo việc làm",
+        "item3": "Đào tạo kỹ thuật canh tác"
+      },
+      "governance": {
+        "title": "Quản trị",
+        "item1": "Truy xuất nguồn gốc",
+        "item2": "Báo cáo ESG chuẩn GRI",
+        "item3": "Quản trị minh bạch"
+      }
+    },
+    "energy": {
+      "environment": {
+        "title": "Môi trường (Environment)",
+        "item1": "Giảm phát thải CO2",
+        "item2": "Tái sử dụng nước"
+      },
+      "social": {
+        "title": "Xã hội (Social)",
+        "item1": "Hợp tác cộng đồng địa phương",
+        "item2": "Phát triển hạ tầng, logistic",
+        "item3": "Đào tạo nghề tại chỗ"
+      },
+      "governance": {
+        "title": "Quản trị (Governance)",
+        "item1": "Quản trị rủi ro khí hậu công bố minh bạch, giám sát độc lập"
+      }
+    },
+    "minerals": {
+      "environment": {
+        "title": "Môi trường (Environment)",
+        "item1": "Khai thác xanh",
+        "item2": "Hoàn nguyên môi trường",
+        "item3": "Xử lý chất thải hiệu quả"
+      },
+      "social": {
+        "title": "Xã hội (Social)",
+        "item1": "Bảo vệ quyền lợi người lao động",
+        "item2": "Chính sách tái định cư minh bạch"
+      },
+      "governance": {
+        "title": "Quản trị (Governance)",
+        "item1": "Thực hiện đánh giá tác động môi trường (EIA) công bố thông tin cho nhà đầu tư và cộng đồng"
+      }
+    },
+    "aquaculture": {
+      "environment": {
+        "title": "Môi trường (Environment)",
+        "item1": "Hệ thống nuôi tuần hoàn (RAS)",
+        "item2": "Không xả thải ra tự nhiên",
+        "item3": "Kiểm soát chất lượng nước"
+      },
+      "social": {
+        "title": "Xã hội (Social)",
+        "item1": "Tăng thu nhập và kỹ năng cho lao động ven biển",
+        "item2": "Giảm lệ thuộc vào tự nhiên"
+      },
+      "governance": {
+        "title": "Quản trị (Governance)",
+        "item1": "Chứng nhận BAP hoặc ASC, truy xuất nguồn gốc số hóa."
+      }
+    }
+  },
   "news": {
-    "title": "Tin Tức Nông Sản",
+    "title": "Tin Tức",
     "description": "Cập nhật thông tin mới nhất về thị trường, xu hướng và sản phẩm nông nghiệp",
     "category": "Danh mục",
     "category_description": "Các tin tức về",
@@ -229,15 +321,16 @@
   },
   "contact": {
     "hero": {
-      "title": "Liên Hệ",
+      "hero": "kết nối với chúng tôi",
+      "title": "Liên hệ",
       "description": "Liên hệ với chúng tôi để được tư vấn và hỗ trợ về các sản phẩm nông sản. Tantai Trading luôn sẵn sàng phục vụ quý khách."
     },
     "info": {
       "title": "Thông Tin Liên Hệ",
       "description": "Hãy liên hệ với chúng tôi qua các kênh thông tin bên dưới hoặc gửi yêu cầu thông qua biểu mẫu.",
       "head_office": "Trụ sở chính",
-      "email": "Email",
-      "phone": "Điện thoại",
+      "email": "Email doanh nghiệp",
+      "phone": "Số điện thoại doanh nghiệp",
       "support_time": "Thời gian hỗ trợ"
     },
     "form": {
@@ -264,12 +357,12 @@
       }
     },
     "newsletter": {
-      "title": "Đăng Ký Nhận Tin",
-      "description": "Đăng ký nhận bản tin của chúng tôi để cập nhật thông tin mới nhất về thị trường nông sản và các ưu đãi đặc biệt.",
+      "title": "Đăng Ký Nhận Tin Tức",
+      "description": "Đăng ký nhận tin tức của chúng tôi để cập nhật thông tin mới nhất về thị trường.",
       "email_placeholder": "Nhập địa chỉ email của bạn",
       "subscribe": "Đăng ký ngay",
       "submitting": "Đang đăng ký...",
-      "success_message": "Cảm ơn bạn đã đăng ký nhận tin từ chúng tôi!",
+      "success_message": "Cảm ơn bạn đã đăng ký nhận tin tức từ chúng tôi!",
       "errors": {
         "email_required": "Vui lòng nhập địa chỉ email",
         "email_invalid": "Địa chỉ email không hợp lệ",

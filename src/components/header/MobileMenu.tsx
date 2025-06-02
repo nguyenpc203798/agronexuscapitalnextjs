@@ -48,7 +48,7 @@ const MobileMenu = memo(({
             onClick={handleToggleProductsSubmenu}
             className={`flex items-center justify-between transition-colors py-2 ${isProductActive() ? 'text-green-800' : 'text-foreground hover:text-primary'}`}
           >
-            {t("nav.products")}
+            {t("nav.categories")}
             <ChevronDown className={`h-4 w-4 transition-transform ${showProductsSubmenu ? 'rotate-180' : ''}`} />
           </button>
           
@@ -97,6 +97,13 @@ const MobileMenu = memo(({
             </Link>
           </div>
         </div>
+        
+        <Link 
+          href="/esg" 
+          className={`transition-colors py-2 ${isActive('/esg') ? 'text-green-800' : 'text-foreground hover:text-primary'}`}
+        >
+          {t("nav.esg")}
+        </Link>
         
         <Link 
           href="/news" 

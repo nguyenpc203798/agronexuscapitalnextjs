@@ -43,6 +43,16 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
         <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
       </Link>
       <Link
+        href="/esg"
+        className={`group relative font-semibold transition-colors ${isActive("/esg")
+            ? "text-green-800"
+            : "text-foreground hover:text-green-800"
+          }`}
+      >
+        {t("nav.esg")}
+        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+      </Link>
+      <Link
         href="/news"
         className={`group relative font-semibold transition-colors ${isActive("/news")
             ? "text-green-800"

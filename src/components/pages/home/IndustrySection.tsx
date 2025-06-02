@@ -223,7 +223,7 @@ const IndustrySection = memo(() => {
           <SectionTitle title={t("home.industry_section.agriculture.title")} />
 
           <motion.div
-            className="bg-b md:md:p-4 rounded-[3rem] mb-16 md:shadow-xl"
+            className="bg-b md:md:p-4 rounded-[3rem] mb-16 md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -265,7 +265,7 @@ const IndustrySection = memo(() => {
           />
 
           <motion.div
-            className="bg-b md:p-8 rounded-[3rem] md:shadow-xl mb-[4rem]"
+            className="bg-b md:p-8 rounded-[3rem] md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl mb-[4rem]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -381,7 +381,7 @@ const IndustrySection = memo(() => {
           <SectionTitle title={t("home.industry_section.energy.title")} />
 
           <motion.div
-            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-xl"
+            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -417,7 +417,7 @@ const IndustrySection = memo(() => {
           <SubIndustryGrid items={energySubIndustries} title="Phân ngành" />
 
           <motion.div
-            className="bg-b md:p-8 rounded-[3rem] md:shadow-xl mb-[4rem]"
+            className="bg-b md:p-8 rounded-[3rem] md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl mb-[4rem]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -527,7 +527,7 @@ const IndustrySection = memo(() => {
           <SectionTitle title={t("home.industry_section.minerals.title")} />
 
           <motion.div
-            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-xl"
+            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -567,7 +567,7 @@ const IndustrySection = memo(() => {
             <SectionTitle title={t("home.industry_section.aquaculture.title")} />
 
           <motion.div
-            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-xl"
+            className="bg-b md:p-4 rounded-[3rem] mb-16 md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -609,7 +609,7 @@ const IndustrySection = memo(() => {
           />
 
           <motion.div
-            className="bg-background md:p-4 rounded-[3rem] mb-[4rem] md:shadow-xl"
+            className="bg-background md:p-4 rounded-[3rem] mb-[4rem] md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
@@ -647,7 +647,7 @@ const IndustrySection = memo(() => {
           </motion.div>
 
           <motion.div
-            className="bg-background md:p-8 rounded-[3rem] md:shadow-xl mb-[4rem]"
+            className="bg-background md:p-8 rounded-[3rem] md:shadow-lg md:transition-all duration-300 md:hover:shadow-xl mb-[4rem]"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}

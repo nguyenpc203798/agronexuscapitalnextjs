@@ -4,7 +4,8 @@
     "about": "About",
     "categories": "Categories",
     "news": "News", 
-    "contact": "Contact"
+    "contact": "Contact",
+    "esg": "Sustainable Development"
   },
   "theme_switcher": {
     "dark_mode": "Enable dark mode",
@@ -183,8 +184,99 @@
       }
     }
   },
+  "esg": {
+    "title": "Sustainable Development",
+    "main_heading_top": "At Agronexus Capital",
+    "main_heading_bottom": "We promote connectivity and",
+    "main_heading_bottom_green": " sustainable development",
+    "intro_description": "Agro Nexus Capital aims to create sustainable value through investment projects that meet ESG criteria (Environmental, Social, Governance). With the mission of \"greening\" the supply chain, we connect capital, technology, and intelligence to promote organic farming, reduce emissions, protect resources, and ensure transparent management, contributing to value optimization for investors and communities.",
+    "sectors": {
+      "title": "Sustainable development investment criteria",
+      "agriculture": "Agriculture",
+      "energy": "Energy",
+      "minerals": "Minerals",
+      "aquaculture": "Aquaculture"
+    },
+    "criteria": {
+      "environment": "Environment",
+      "social": "Social",
+      "governance": "Governance"
+    },
+    "agriculture": {
+      "environment": {
+        "title": "Environment",
+        "item1": "Organic farming - high technology",
+        "item2": "Water conservation",
+        "item3": "No harmful chemicals",
+        "item4": "Production forest planting"
+      },
+      "social": {
+        "title": "Social",
+        "item1": "Contract farming with guaranteed purchase",
+        "item2": "Job creation",
+        "item3": "Farming technical training"
+      },
+      "governance": {
+        "title": "Governance",
+        "item1": "Traceability",
+        "item2": "GRI standard ESG reporting",
+        "item3": "Transparent management"
+      }
+    },
+    "energy": {
+      "environment": {
+        "title": "Environment",
+        "item1": "CO2 emission reduction",
+        "item2": "Water reuse"
+      },
+      "social": {
+        "title": "Social",
+        "item1": "Local community cooperation",
+        "item2": "Infrastructure and logistics development",
+        "item3": "On-site vocational training"
+      },
+      "governance": {
+        "title": "Governance",
+        "item1": "Climate risk management with transparent disclosure and independent monitoring"
+      }
+    },
+    "minerals": {
+      "environment": {
+        "title": "Environment",
+        "item1": "Green mining",
+        "item2": "Environmental restoration",
+        "item3": "Effective waste treatment"
+      },
+      "social": {
+        "title": "Social",
+        "item1": "Protection of workers' rights",
+        "item2": "Transparent resettlement policy"
+      },
+      "governance": {
+        "title": "Governance",
+        "item1": "Environmental Impact Assessment (EIA) with information disclosure to investors and communities"
+      }
+    },
+    "aquaculture": {
+      "environment": {
+        "title": "Environment",
+        "item1": "Recirculating Aquaculture System (RAS)",
+        "item2": "No discharge to nature",
+        "item3": "Water quality control"
+      },
+      "social": {
+        "title": "Social",
+        "item1": "Increased income and skills for coastal workers",
+        "item2": "Reduced dependence on nature"
+      },
+      "governance": {
+        "title": "Governance",
+        "item1": "BAP or ASC certification, digital traceability"
+      }
+    }
+  },
   "news": {
-    "title": "Agricultural News",
+    "title": "News",
     "description": "Stay updated with the latest information about markets, trends, and agricultural products",
     "category": "Category",
     "category_description": "News about",
@@ -230,15 +322,16 @@
   },
   "contact": {
     "hero": {
-      "title": "Contact Us",
+      "hero": "Connect with us",
+      "title": "Contact",
       "description": "Contact us for consultation and support on agricultural products. Tantai Trading is always ready to serve you."
     },
     "info": {
       "title": "Contact Information",
       "description": "Please contact us through the channels below or send a request through the form.",
       "head_office": "Head Office",
-      "email": "Email",
-      "phone": "Phone",
+      "email": "Email business",
+      "phone": "Phone number business",
       "support_time": "Support Time"
     },
     "form": {
@@ -265,12 +358,12 @@
       }
     },
     "newsletter": {
-      "title": "Subscribe to Newsletter",
-      "description": "Subscribe to our newsletter to get the latest information on agricultural markets and special offers.",
+      "title": "Subscribe to News",
+      "description": "Subscribe to our news to get the latest information on agricultural markets.",
       "email_placeholder": "Enter your email address",
       "subscribe": "Subscribe Now",
       "submitting": "Subscribing...",
-      "success_message": "Thank you for subscribing to our newsletter!",
+      "success_message": "Thank you for subscribing to our news!",
       "errors": {
         "email_required": "Please enter your email address",
         "email_invalid": "Invalid email address",

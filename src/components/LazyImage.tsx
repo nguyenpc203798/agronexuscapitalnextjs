@@ -1,4 +1,4 @@
-import { useState, useEffect, memo } from "react";
+import { useState, memo } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
@@ -9,41 +9,10 @@ interface LazyImageProps {
   height?: number;
   className?: string;
   priority?: boolean;
+  quality?: number;
+  unoptimized?: boolean;
+  blurDataURL?: string;
 }
-
-const PLACEHOLDER_IMAGE = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iODAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0iI2YxZjVmOSIvPjwvc3ZnPg==";
-
-const useImageLoader = (src: string, priority = false) => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [currentSrc, setCurrentSrc] = useState(PLACEHOLDER_IMAGE);
-
-  useEffect(() => {
-    setIsLoading(true);
-    setCurrentSrc(PLACEHOLDER_IMAGE);
-    
-    if (priority) {
-      setCurrentSrc(src);
-      setIsLoading(false);
-      return;
-    }
-    
-    const img = document.createElement('img');
-    img.src = src;
-    
-    const handleLoad = () => {
-      setCurrentSrc(src);
-      setIsLoading(false);
-    };
-    
-    img.addEventListener('load', handleLoad);
-    
-    return () => {
-      img.removeEventListener('load', handleLoad);
-    };
-  }, [src, priority]);
-
-  return { isLoading, currentSrc, setIsLoading };
-};
 
 const LazyImage = memo(({
   src,
@@ -52,25 +21,33 @@ const LazyImage = memo(({
   height = 600,
   className,
   priority = false,
+  quality = 95,
+  unoptimized = false,
+  blurDataURL,
 }: LazyImageProps) => {
-  const { isLoading, currentSrc, setIsLoading } = useImageLoader(src, priority);
+  // Nếu là ảnh priority, không cần placeholder
+  const [isLoading, setIsLoading] = useState(!priority);
 
   return (
-    <div className="h-full w-full">
+    <div className="relative h-full w-full overflow-hidden">
       <Image
-        src={priority ? src : currentSrc}
+        src={src}
         alt={alt}
         width={width}
         height={height}
+        quality={quality}
+        unoptimized={unoptimized}
+        placeholder={blurDataURL ? "blur" : undefined}
+        blurDataURL={blurDataURL}
         className={cn(
-          "duration-700 ease-in-out h-full w-full",
+          "duration-500 ease-in-out h-full w-full object-cover",
           isLoading
             ? "grayscale blur-sm scale-105"
             : "grayscale-0 blur-0 scale-100",
           className
         )}
         priority={priority}
-        onLoad={() => setIsLoading(false)}
+        onLoadingComplete={() => setIsLoading(false)}
       />
     </div>
   );
@@ -78,4 +55,4 @@ const LazyImage = memo(({
 
 LazyImage.displayName = "LazyImage";
 
-export default LazyImage; 
+export default LazyImage;

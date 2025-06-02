@@ -21,7 +21,7 @@ const CategoryPage = memo(() => {
         transition={{ duration: 0.8 }}
       >
         <PageHero 
-          title={t("category.title")}
+          title={t("home.investment_fields_section.title")}
           variant="simple"
         />
       </motion.div>
