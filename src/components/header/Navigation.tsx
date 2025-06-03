@@ -11,7 +11,7 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
   };
 
   return (
-    <nav className="hidden md:flex space-x-8">
+    <nav className="hidden lg:flex space-x-8">
       <Link
         href="/"
         className={`group relative font-semibold transition-colors ${isActive("/")
@@ -20,7 +20,9 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
           }`}
       >
         {t("nav.home")}
-        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+        <div className="flex justify-center">
+          <div className="absolute w-0 group-hover:w-full h-[2px] bg-primary rounded transition-all duration-500 mb-4"></div>
+        </div>
       </Link>
       <Link
         href="/about"
@@ -30,7 +32,9 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
           }`}
       >
         {t("nav.about")}
-        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+        <div className="flex justify-center">
+          <div className="absolute w-0 group-hover:w-full h-[2px] bg-primary rounded transition-all duration-500 mb-4"></div>
+        </div>
       </Link>
       <Link
         href="/category"
@@ -40,7 +44,9 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
           }`}
       >
         {t("nav.categories")}
-        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+        <div className="flex justify-center">
+          <div className="absolute w-0 group-hover:w-full h-[2px] bg-primary rounded transition-all duration-500 mb-4"></div>
+        </div>
       </Link>
       <Link
         href="/esg"
@@ -50,7 +56,9 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
           }`}
       >
         {t("nav.esg")}
-        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+        <div className="flex justify-center">
+          <div className="absolute w-0 group-hover:w-full h-[2px] bg-primary rounded transition-all duration-500 mb-4"></div>
+        </div>
       </Link>
       <Link
         href="/news"
@@ -60,7 +68,9 @@ const Navigation = memo(({ t }: { t: (key: string) => string }) => {
           }`}
       >
         {t("nav.news")}
-        <div className="absolute w-0 group-hover:w-full h-1 bg-primary rounded transition-all duration-500 mb-4"></div>
+        <div className="flex justify-center">
+          <div className="absolute w-0 group-hover:w-full h-[2px] bg-primary rounded transition-all duration-500 mb-4"></div>
+        </div>
       </Link>
     </nav>
   );

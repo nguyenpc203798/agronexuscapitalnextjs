@@ -234,11 +234,11 @@ const IndustrySection = memo(() => {
                 className="relative md:w-1/2 md:p-[3rem] lg:p-[6rem] mb-12 md:mb-0"
                 variants={fadeInUp}
               >
-                <h2>{t("home.industry_section.agriculture.investment_direction")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.agriculture.investment_direction")}</h2>
                 <p className="mb-[2rem] text-justify">
                   {t("home.industry_section.agriculture.investment_content")}
                 </p>
-                <h2>{t("home.industry_section.agriculture.sub_industries")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.agriculture.sub_industries")}</h2>
                 <ul className="text-[16px] list-disc list-inside text-left mb-3">
                   <li>{t("home.industry_section.agriculture.sub_industries_list.dry_grain")}</li>
                   <li>{t("home.industry_section.agriculture.sub_industries_list.processed")}</li>
@@ -247,7 +247,7 @@ const IndustrySection = memo(() => {
                   <li>{t("home.industry_section.agriculture.sub_industries_list.forest")}</li>
                 </ul>
               </motion.div>
-              <motion.div className="md:w-1/2 md:p-4" variants={fadeInUp}>
+              <motion.div className="md:w-1/2 md:p-4 aspect-square" variants={fadeInUp}>
                 <LazyImage
                   src="/images/category/HighTechAgriculture/Represent.jpg"
                   alt="Nông nghiệp công nghệ cao"
@@ -289,7 +289,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative w-full lg:col-span-2 xl:col-span-3"
+                className="relative w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -297,7 +297,7 @@ const IndustrySection = memo(() => {
                   alt="Tổng kho nông sản thông minh"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="w-full object-cover"
                 />
                 <p className="absolute bottom-[1rem] right-[5rem] text-white text-lg">
                   {t("home.industry_section.agriculture.reference_image")}
@@ -326,7 +326,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3"
+                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3 aspect-square"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -334,7 +334,7 @@ const IndustrySection = memo(() => {
                   alt="Chuỗi nông trại công nghệ cao"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="object-cover rounded-[2rem]"
                 />
                 <p className="absolute bottom-[1rem] left-[2rem] text-white text-lg">
                   {t("home.industry_section.agriculture.reference_image")}
@@ -354,7 +354,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3"
+                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -362,7 +362,7 @@ const IndustrySection = memo(() => {
                   alt="Chuỗi nông trại công nghệ cao"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="w-full object-cover"
                 />
                 <p className="absolute bottom-[1rem] left-[2rem] text-white text-lg">
                   {t("home.industry_section.agriculture.reference_image")}
@@ -392,17 +392,17 @@ const IndustrySection = memo(() => {
                 className="relative md:w-1/2 md:p-[3rem] lg:p-[6rem] mb-12 md:mb-0"
                 variants={fadeInUp}
               >
-                <h2>{t("home.industry_section.energy.investment_direction")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.energy.investment_direction")}</h2>
                 <p className="mb-[2rem] text-justify">
                   {t("home.industry_section.energy.investment_content")}
                 </p>
-                <h2>{t("home.industry_section.energy.sub_industries")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.energy.sub_industries")}</h2>
                 <ul className="text-[16px] list-disc list-inside text-justify">
                   <li>{t("home.industry_section.energy.sub_industries_list.petroleum")}</li>
                   <li>{t("home.industry_section.energy.sub_industries_list.renewable")}</li>
                 </ul>
               </motion.div>
-              <motion.div className="md:w-1/2 md:p-4" variants={fadeInUp}>
+              <motion.div className="md:w-1/2 md:p-4 aspect-square" variants={fadeInUp}>
                 <LazyImage
                   src="/images/category/Energy/Represent.jpg"
                   alt="Năng lượng"
@@ -441,7 +441,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative w-full lg:col-span-2 xl:col-span-3"
+                className="relative w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -449,7 +449,7 @@ const IndustrySection = memo(() => {
                   alt="Tổng kho nông sản thông minh"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="w-full object-cover"
                 />
                 <p className="absolute bottom-[1rem] right-[5rem] text-white text-lg">
                   {t("home.industry_section.energy.reference_image")}
@@ -475,7 +475,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3"
+                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3 aspect-square"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -483,7 +483,7 @@ const IndustrySection = memo(() => {
                   alt="Chuỗi nông trại công nghệ cao"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="object-cover rounded-[2rem]"
                 />
                 <p className="absolute bottom-[1rem] left-[2rem] text-white text-lg">
                   {t("home.industry_section.energy.reference_image")}
@@ -500,7 +500,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3"
+                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -508,7 +508,7 @@ const IndustrySection = memo(() => {
                   alt="Chuỗi nông trại công nghệ cao"
                   width={1200}
                   height={800}
-                  className="w-full h-[25rem] object-cover rounded-[2rem]"
+                  className="w-full object-cover"
                 />
                 <p className="absolute bottom-[1rem] left-[2rem] text-white text-lg">
                   {t("home.industry_section.energy.reference_image")}
@@ -538,12 +538,12 @@ const IndustrySection = memo(() => {
                 className="relative md:w-1/2 md:p-[3rem] lg:p-[6rem]"
                 variants={fadeInUp}
               >
-                <h2>{t("home.industry_section.minerals.investment_direction")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.minerals.investment_direction")}</h2>
                 <p className="mb-[2rem] text-justify">
                   {t("home.industry_section.minerals.investment_content")}
                 </p>
               </motion.div>
-              <motion.div className="md:w-1/2 md:p-4" variants={fadeInUp}>
+              <motion.div className="md:w-1/2 md:p-4 aspect-square" variants={fadeInUp}>
                 <LazyImage
                   src="/images/category/Minerals/Represent.jpg"
                   alt="Khoáng sản"
@@ -578,12 +578,12 @@ const IndustrySection = memo(() => {
                 className="relative md:w-1/2 md:p-[3rem] lg:p-[6rem]"
                 variants={fadeInUp}
               >
-                <h2>{t("home.industry_section.aquaculture.investment_direction")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.aquaculture.investment_direction")}</h2>
                 <p className="mb-[2rem] text-justify">
                   {t("home.industry_section.aquaculture.investment_content")}
                 </p>
               </motion.div>
-              <motion.div className="md:w-1/2 md:p-4" variants={fadeInUp}>
+              <motion.div className="md:w-1/2 md:p-4 aspect-square" variants={fadeInUp}>
                 <LazyImage
                   src="/images/category/Seafood/Represent.jpg"
                   alt="Thủy sản"
@@ -620,7 +620,7 @@ const IndustrySection = memo(() => {
                 className="relative md:w-1/2 md:p-[3rem] lg:p-[6rem]"
                 variants={fadeInUp}
               >
-                <h2>{t("home.industry_section.logistics.investment_direction")}</h2>
+                <h2 className="text-center md:text-left">{t("home.industry_section.logistics.investment_direction")}</h2>
                 <p className="mb-[2rem] text-justify">
                   {t("home.industry_section.logistics.investment_content")}
                 </p>
@@ -634,7 +634,7 @@ const IndustrySection = memo(() => {
                   <li className="mb-2">{t("home.industry_section.logistics.services_list.transport")}</li>
                 </ul>
               </motion.div>
-              <motion.div className="md:w-1/2 md:p-4" variants={fadeInUp}>
+              <motion.div className="md:w-1/2 md:p-4 aspect-square" variants={fadeInUp}>
                 <LazyImage
                   src="/images/category/Warehouse&Logistics/Represent.jpg"
                   alt="Kho cảng logistics"
@@ -671,7 +671,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative w-full lg:col-span-2 xl:col-span-3"
+                className="relative w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -708,7 +708,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3"
+                className="relative block lg:hidden w-full lg:col-span-2 xl:col-span-3 aspect-square"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -716,7 +716,7 @@ const IndustrySection = memo(() => {
                   alt="Dịch vụ Tổng kho"
                   width={1200}
                   height={800}
-                  className="w-full h-[30rem] object-cover rounded-[2rem]"
+                  className="object-cover rounded-[2rem]"
                 />
                 <p className="absolute bottom-[1rem] left-[2rem] text-white text-lg">
                   {t("home.industry_section.logistics.reference_image")}
@@ -736,7 +736,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3"
+                className="relative hidden lg:block w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage
@@ -761,7 +761,7 @@ const IndustrySection = memo(() => {
               </motion.div>
 
               <motion.div
-                className="relative w-full lg:col-span-2 xl:col-span-3"
+                className="relative w-full lg:col-span-2 xl:col-span-3 aspect-square md:aspect-[4/2] overflow-hidden rounded-[2rem]"
                 variants={fadeInUp}
               >
                 <LazyImage

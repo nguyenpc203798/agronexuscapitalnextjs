@@ -184,6 +184,9 @@
       }
     }
   },
+  "about": {
+    "hero": "About Us"
+  },
   "esg": {
     "title": "Sustainable Development",
     "main_heading_top": "At Agronexus Capital",

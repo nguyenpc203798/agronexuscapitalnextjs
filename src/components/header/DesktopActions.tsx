@@ -6,7 +6,7 @@ import LanguageSwitcher from "@/components/header/LanguageSwitcher";
 
 const DesktopActions = memo(({ t }: { t: (key: string) => string }) => {   
   return (
-    <div className="hidden md:flex items-center space-x-2">
+    <div className="hidden lg:flex items-center space-x-2">
       <ThemeSwitcher />
       <LanguageSwitcher />
       <Link href="/contact">

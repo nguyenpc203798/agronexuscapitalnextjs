@@ -47,7 +47,7 @@ const LazyImage = memo(({
           className
         )}
         priority={priority}
-        onLoadingComplete={() => setIsLoading(false)}
+        onLoad={() => setIsLoading(false)}
       />
     </div>
   );

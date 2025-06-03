@@ -65,7 +65,7 @@ const CoreValuesSection = memo(() => {
       </div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 md:px-8 lg:px-0 relative z-10">
+      <div className="container mx-auto px-4 md:px-8 xl:px-0 relative z-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -94,7 +94,7 @@ const CoreValuesSection = memo(() => {
                 <h4 className="text-3xl text-white mb-4 mt-[4rem] lg:mt-0">
                   {value.title}
                 </h4>
-                <p className="text-white">
+                <p className="text-white text-center md:text-justify">
                   {value.description}
                 </p>
               </motion.div>

@@ -183,6 +183,9 @@
       }
     }
   },
+  "about": {
+    "hero": "về chúng tôi"
+  },
   "esg": {
     "title": "Phát Triển Bền Vững",
     "main_heading_top": " Tại Agronexus Capital",

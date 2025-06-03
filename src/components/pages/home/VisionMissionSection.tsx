@@ -16,7 +16,7 @@ const VisionMissionSection = memo(() => {
 
   return (
     <section
-      className="relative overflow-hidden container mb-[4rem] rounded-[3rem]"
+      className="relative overflow-hidden container mb-[4rem] lg:rounded-[3rem]"
     >
       {/* Background với Next.js Image */}
       <div className="absolute inset-0 w-full z-0 h-full">
@@ -32,9 +32,9 @@ const VisionMissionSection = memo(() => {
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 mx-auto px-4">
+      <div className="relative z-10 mx-auto">
         <div
-          className="p-[2rem] lg:p-[3rem] h-[55rem] md:h-[40rem] lg:h-[50rem]  relative rounded-[3rem] w-full"
+          className="py-[2rem] lg:p-[3rem] h-[55rem] md:h-[40rem] lg:h-[50rem]  relative rounded-[3rem] w-full"
         >
           <motion.div
             className="h-full w-full lg:w-[50%] flex flex-col justify-end space-y-4"

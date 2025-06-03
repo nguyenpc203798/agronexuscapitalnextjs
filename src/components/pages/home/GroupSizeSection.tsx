@@ -57,7 +57,7 @@ const CounterItem = ({ number, label, duration = 2000, hasPlusSign = false, dela
           {formattedNumber}
         </p>
         {hasPlusSign && (
-          <p className="text-[3rem] lg:text-[7rem] font-bold text-primary font-['Georgia',_serif]">+</p>
+          <p className="text-[3rem]  md:text-[5rem] lg:text-[7rem] font-bold text-primary font-['Georgia',_serif]">+</p>
         )}
       </div>
       <hr className="my-4 border-t border-gray-300" />

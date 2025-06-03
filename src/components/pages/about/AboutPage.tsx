@@ -13,7 +13,7 @@ const AboutPage = () => {
       {/* Hero Section */}
       <PageHero 
         i18nKey={{
-          title: 'about.hero.title',
+          title: 'about.hero',
           description: 'about.hero.description'
         }}
         variant="simple"
